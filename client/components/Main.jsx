@@ -7,8 +7,8 @@ function Main() {
        
           <div class="banner">
             <p>Crafting Premium Living, One Brushstroke at a Time.</p>
-            <button class="hollow-button">View our work</button>
-            <button class="solid-button">Contact us</button>
+            <button class="hollow-button" onClick={() => window.location.href = '/work'}>View our work</button>
+            <button class="solid-button" onClick={() => window.location.href = '/contact'}>Contact us</button>
           
          </div>
     </section>

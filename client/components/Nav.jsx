@@ -13,7 +13,7 @@ function Nav() {
 
   return (
     <section id="nav-bar">
-      <img href="/" className="nav-image" src="../../public/nav.png" alt="Navigation logo" />
+      <img onClick={() => window.location.href = '/'} className="nav-image" src="../public/nav.png" alt="Navigation logo" />
       <ul className={`menu ${isMenuOpen ? 'showMenu' : ''}`}>
         <li><a className="menuItem" href="/about">About us</a></li>
         <li><a className="menuItem" href="/services">Services</a></li>

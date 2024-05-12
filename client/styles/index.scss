@@ -153,7 +153,7 @@ section {
 /* Landing Page */
 #landing-page {
     height: 560px;
-    background-image: url(../../public/PPD.png);
+    background-image: url(/PPD.png);
     background-size:cover;
     background-position: center;
     display: flex;
@@ -387,6 +387,7 @@ padding-top: 50px;
   font-family: "Forum", cursive;
  border-bottom: 2px solid #e6b850;
  padding-bottom: 5px;
+ margin-bottom: 35px;
  display: inline-block;
 }
 
@@ -399,6 +400,7 @@ padding-top: 50px;
    position: relative;
    display: inline-block;
    background-color: #0f0f0f;
+   margin-top: 100px;
 }
 
 .footer-overlay {

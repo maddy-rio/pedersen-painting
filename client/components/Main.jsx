@@ -15,7 +15,7 @@ function Main() {
 
     {/* Section 1 */}
     <section id="section1">
-<img src="../../public/waimarama1.png"></img>
+<img src="/waimarama1.png"></img>
 <div className="section-text">
   <p className="section-header">WHO WE ARE</p>
 <p>Welcome to Pedersen Painting & Decorating, your trusted choice for superior painting solutions in Hawke's Bay. As a family-run business, we take pride in delivering exceptional results tailored to your vision. With a focus on residential new builds and partnerships with industry leaders, we promise a premium finish that stands the test of time.</p>
@@ -26,7 +26,7 @@ function Main() {
 
     {/*  Section 2  */}
     <section id="section2">
-      <img src="../../public/waimarama2.png"></img>
+      <img src="/waimarama2.png"></img>
       <div className="section-text">
       <p className="section-header">OUR SERVICES</p>
       <p>
@@ -40,7 +40,7 @@ Elevate your space with our premium services. From residential to commercial pai
   <div class="flex-container">
     <div class="flex-item">
       <div class="image-container">
-        <img src="../../public/Taihape.png" alt="House in Taihape"/>
+        <img src="/Taihape.png" alt="House in Taihape"/>
         <div class="static-overlay"></div>
         <div class="overlay"></div>
         <div class="text">Taihape</div>
@@ -48,7 +48,7 @@ Elevate your space with our premium services. From residential to commercial pai
     </div>
     <div class="flex-item">
       <div class="image-container">
-        <img src="../../public/Waimarama.png" alt="House in Waimarama"/>
+        <img src="/Waimarama.png" alt="House in Waimarama"/>
         <div class="static-overlay"></div>
         <div class="overlay"></div>
         <div class="text">Waimārama</div>
@@ -56,7 +56,7 @@ Elevate your space with our premium services. From residential to commercial pai
     </div>
     <div class="flex-item">
       <div class="image-container">
-        <img src="../../public/Edenlane.png" alt="House on Eden Lane"/>
+        <img src="/Edenlane.png" alt="House on Eden Lane"/>
         <div class="static-overlay"></div>
         <div class="overlay"></div>
         <div class="text">Eden Lane</div>

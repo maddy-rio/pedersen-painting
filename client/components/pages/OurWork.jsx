@@ -9,10 +9,8 @@ function OurWork() {
             <Nav />
             <section>
             <h1 class="page-header">Our work</h1>
-            </section>
-           
-            {/* <section id="work-page">
-            <h1>OUR WORK</h1>
+             <section id="work-page">
+        
             <section id="work-section">
   <div class="flex-container">
     <div class="flex-item">
@@ -73,9 +71,13 @@ function OurWork() {
   </div>
   
 </section>
-</section> */}
+</section>
+<Footer />
+            </section>
+           
+           
 
-            <Footer />
+          
         </>
     )
 }

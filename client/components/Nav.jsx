@@ -25,12 +25,12 @@ function Nav() {
 
   return (
     <section className={navBarClass}>
-      <img onClick={() => window.location.href = '/'} className="nav-image" src="../../public/nav.png" alt="Navigation logo" />
+      <img onClick={() => window.location.href = '/'} className="nav-image" src="/nav.png" alt="Navigation logo" />
       <ul className={`menu ${isMenuOpen ? 'showMenu' : ''}`}>
         <li><a className="menuItem" href="/about">About us</a></li>
         <li><a className="menuItem" href="/services">Services</a></li>
         <li><a className="menuItem" href="/work">Our work</a></li>
-        <li><a className="menuItem" href="/contact">Contact</a></li>
+        <li><a className="menuItem" href="/contact">Contact us</a></li>
       </ul>
       <button className="hamburger" onClick={toggleMenu}>
         <div>

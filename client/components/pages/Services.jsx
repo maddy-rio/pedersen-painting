@@ -9,12 +9,10 @@ function Services() {
           <Nav />
           
           <section>
-          <h1 class="page-header">Services</h1>
-            </section>         
+          <h1 class="page-header">Services</h1>      
             
             
              {/* <section id="work-page">
-            <h1>SERVICES</h1>
             <section id="work-section">
   <div class="flex-container">
     <div class="flex-item">
@@ -76,7 +74,8 @@ function Services() {
   
 </section>
 </section> */}
-        <Footer />
+<Footer />
+</section>
         </>
     )
 }

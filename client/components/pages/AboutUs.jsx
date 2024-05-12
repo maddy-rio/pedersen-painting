@@ -1,11 +1,15 @@
 import Nav from '../Nav'
+import Footer from '../Footer'
 
 function AboutUs() {
 
     return (
         <>
         <Nav />
-            <h1>ABOUT US</h1>
+            <section>
+                <h1 class="page-header">About us</h1>
+            </section>
+        <Footer />
         </>
     )
 }

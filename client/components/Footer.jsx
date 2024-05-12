@@ -27,12 +27,12 @@ function footer() {
       <div class="grid-item">
          <p class="footer-contact">Contact us</p>
          <p class="footer-number">027 207 1306</p>
-         <a href="mailto:jayden@pedersenpainting.co.nz" class="footer-email">jayden@pedersenpainting.co.nz</a>
+         <a hrefclass="footer-email">jayden@pedersenpainting.co.nz</a>
          <p class="footer-social">Connect on &nbsp; <a href='/'><FaFacebook /></a> <a href='/'><FaInstagram /></a></p>
       </div>
       </div>
        <div class="footer-overlay"></div>
-        <div class="footer-text">© 2024 Pedersen Painting & Decorating  &nbsp; &nbsp;|  &nbsp; &nbsp;  Website by Maddy</div>
+        <div class="footer-text">© 2024 Pedersen Painting & Decorating  &nbsp; &nbsp;|  &nbsp; &nbsp;  All rights reserved</div>
     </section>
  )
 }

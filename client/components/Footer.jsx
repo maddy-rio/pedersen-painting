@@ -7,12 +7,10 @@ function footer() {
         <div class="grid-item">
          <p class="footer-heading">Services</p>
          <ul>
-         <li><a href="/services">Residential painting</a></li>
-         <li><a href="/services">Commerical painting</a></li>
-         <li><a href="/services">Exterior painting</a></li>
-         <li><a href="/services">Roof painting</a></li>
+         <li><a href="/services">Residential</a></li>
+         <li><a href="/services">Commerical</a></li>
          <li><a href="/services">Wallpapering</a></li>
-         <li><a href="/services">Water-blasting</a></li>
+         <li><a href="/services">Waterblasting</a></li>
          </ul>
       </div>
       <div class="grid-item">

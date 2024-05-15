@@ -48,7 +48,7 @@ Elevate your space with our premium services. From residential to commercial pai
     </div>
     <div class="flex-item">
       <div class="image-container">
-        <img src="/Waimarama.png" alt="House in Waimarama"/>
+        <img  src="/Waimarama.png" alt="House in Waimarama"/>
         <div class="static-overlay"></div>
         <div class="overlay"></div>
         <div class="text">Waimārama</div>

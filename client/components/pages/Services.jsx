@@ -16,7 +16,7 @@ function Services() {
           <p>Residential painting info...</p>
           <p>Commercial painting info...</p>
           </div>
-          <div class="services-container">
+          <div class="services-container2">
           <p>Wallpapering info...</p>
           <p>Waterblasting info...</p>
           </div>

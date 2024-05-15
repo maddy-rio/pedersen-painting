@@ -181,7 +181,7 @@ border: 2px solid #e6b850;
 background-color: transparent;
 color: #e6b850;
 font-family: 'DM Sans', sans-serif;
-font-weight: 200;
+font-weight: 300;
 font-size: 14px;
 letter-spacing: 1px;
 padding: 8px 30px;
@@ -198,7 +198,7 @@ width: 180px;
     background-color: #e6b850;
     color: black;
     font-family: 'DM Sans', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 14px;
     letter-spacing: 1px;
     padding: 8px 30px;
@@ -212,11 +212,11 @@ width: 180px;
 }
 
 .section-button {
+  background-color:  #e6b850;
   border: 2px solid #e6b850;
-background-color: transparent;
-color: #e6b850;
+  color: black;
 font-family: 'DM Sans', sans-serif;
-font-weight: 200;
+font-weight: 300;
 font-size: 14px;
 letter-spacing: 1px;
 width: 180px;
@@ -228,7 +228,6 @@ margin: 35px 0 100px 150px;
 
 .section-button:hover {
   background-color:  #ffcc57;
-  border: 2px solid #ffcc57;
   color: black;
 }
 
@@ -359,6 +358,97 @@ margin: 35px 0 100px 150px;
   font-weight: bold;
 }
 
+// About page CSS
+
+
+#about-section {
+  padding: 100px 0;  
+  height: 600px;
+}
+
+#about-section img {
+    width: 300px;
+}
+
+.about-header {
+  width: 14%;
+  font-size: 42px;
+  font-family: "Forum", cursive;
+  border-bottom: 2px solid #e6b850;
+  padding-bottom: 5px;
+  margin-bottom: 60px;
+  display: inline-block;
+}
+.about-us {
+  padding: 0 150px;
+  height: 900px;
+  text-align: center;
+}
+
+.about-item {
+  flex: 0 0 28%; 
+  text-align: center; 
+}
+
+.about-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color:#e6b950c6;
+  font-size: 35px; 
+  font-weight: bold;
+ font-family: "Forum", cursive;
+  text-align: end; 
+  pointer-events: none; 
+}
+
+.about-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000003e;
+  opacity: 1;
+}
+
+.image-container:hover .about-text {
+  color: black;
+  font-weight: bold;
+}
+
+#about-section img {
+  display: block; 
+  width: 290px;
+  height: 260px;
+}
+
+.about-hr {
+  border: 2px solid #e6b850;
+  margin: 0 auto;
+  width: 800px;
+margin: 20px auto;
+}
+
+// Services page CSS 
+
+#services-page {
+  height: 900px;
+}
+
+.services-container {
+  display: grid;
+  border: 2px solid #e6b850;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+ 
+  height: 400px
+}
+
+.services-container2 {
+  display: grid;
+}
 
 // Our work page CSS
 
@@ -388,6 +478,7 @@ padding-top: 50px;
 .page-header {
   width: 14%;
   font-size: 42px;
+ 
   font-family: "Forum", cursive;
  border-bottom: 2px solid #e6b850;
  padding-bottom: 5px;
@@ -477,7 +568,7 @@ font-size: 15px;
   letter-spacing: 1px;
 }
 
-.grid-container {
+.footer-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 10px; 
@@ -485,7 +576,7 @@ font-size: 15px;
   padding: 80px 0 0 180px;
 }
 
-.grid-item {
+.footer-item {
   text-align: start; 
   color: white;
 }

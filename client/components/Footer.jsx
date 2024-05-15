@@ -3,8 +3,8 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa';
 function footer() {
  return (
     <section id="section-footer">
-      <div class="grid-container">
-        <div class="grid-item">
+      <div class="footer-container">
+        <div class="footer-item">
          <p class="footer-heading">Services</p>
          <ul>
          <li><a href="/services">Residential</a></li>
@@ -13,7 +13,7 @@ function footer() {
          <li><a href="/services">Waterblasting</a></li>
          </ul>
       </div>
-      <div class="grid-item">
+      <div class="footer-item">
          <p class="footer-heading">Quick Links</p>
          <ul>
          <li><a href="/about">About us</a></li>
@@ -22,7 +22,7 @@ function footer() {
          <li><a href="/contact">Contact</a></li>
          </ul>
       </div>
-      <div class="grid-item">
+      <div class="footer-item">
          <p class="footer-contact">Contact us</p>
          <p class="footer-number">027 207 1306</p>
          <a class="footer-email" href="mailto:jayden@pedersenpainting.co.nz">jayden@pedersenpainting.co.nz</a>

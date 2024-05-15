@@ -15,7 +15,7 @@ function OurWork() {
   <div class="flex-container">
     <div class="flex-item">
       <div class="image-container">
-        <img src="/Haumoana.png" alt="House in Haumoana"/>
+        <img src="/Haumoana.jpeg" alt="House in Haumoana"/>
         <div class="static-overlay"></div>
         <div class="overlay"></div>
         <div class="text">Haumoana</div>
@@ -23,7 +23,7 @@ function OurWork() {
     </div>
     <div class="flex-item">
       <div class="image-container">
-        <img src="/Edenlane.png" alt="House on Eden Lane"/>
+        <img src="/Edenlane.jpeg" alt="House on Eden Lane"/>
         <div class="static-overlay"></div>
         <div class="overlay"></div>
         <div class="text">Eden Lane</div>
@@ -31,7 +31,7 @@ function OurWork() {
     </div>
     <div class="flex-item">
       <div class="image-container">
-        <img src="/Waimarama.png" alt="House in Waimārama"/>
+        <img src="/Waimarama.jpeg" alt="House in Waimārama"/>
         <div class="static-overlay"></div>
         <div class="overlay"></div>
         <div class="text">Waimārama</div>
@@ -45,7 +45,7 @@ function OurWork() {
   <div class="flex-container">
     <div class="flex-item">
       <div class="image-container">
-        <img src="/Taihape.png" alt="House in Taihape"/>
+        <img src="/Taihape.jpeg" alt="House in Taihape"/>
         <div class="static-overlay"></div>
         <div class="overlay"></div>
         <div class="text">Taihape</div>
@@ -53,7 +53,7 @@ function OurWork() {
     </div>
     <div class="flex-item">
       <div class="image-container">
-        <img src="/Interiors.png" alt="Interior pictures"/>
+        <img src="/Interiors.jpeg" alt="Interior pictures"/>
         <div class="static-overlay"></div>
         <div class="overlay"></div>
         <div class="text">Interiors</div>
@@ -61,7 +61,7 @@ function OurWork() {
     </div>
     <div class="flex-item">
       <div class="image-container">
-        <img src="/Exteriors.png" alt="Exterior pictures"/>
+        <img src="/Exteriors.jpeg" alt="Exterior pictures"/>
         <div class="static-overlay"></div>
         <div class="overlay"></div>
         <div class="text">Exteriors</div>

@@ -439,11 +439,48 @@ margin: 20px auto;
 }
 
 .services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
 
 }
 
-.services-container2 {
- 
+.services-containerItem {
+  flex: 0 0 20%; 
+  text-align: center; 
+  padding: 10px;
+  border: 1px solid #e6b850;
+  margin: 30px;
+  color: black;
+  background-color: #e6b850;
+  height: 400px;
+  box-shadow: 12px 12px #222222;
+}
+
+.services-containerItem:hover {
+  transform: scale(1.02);
+}
+
+.services-containerItem h1 {
+  padding-top: 16px;
+  font-family: "Forum", cursive;
+  color: #000000;
+  font-size: 35px;
+  border-bottom: 4px solid #000000;
+  padding-bottom: 1px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.services-containerItem p {
+  padding-top: 25px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  width: 80%;
+  margin: 0 auto;
+  font-style: italic;
+  text-align: start;
 }
 
 // Our work page CSS

@@ -383,7 +383,8 @@ margin: 35px 0 100px 150px;
   padding: 0 150px;
   height: 900px;
   text-align: center;
-  font-size: 19px;
+  font-size: 22px;
+  font-family: "Forum", cursive;
 }
 
 .about-item {
@@ -435,51 +436,71 @@ margin: 20px auto;
 // Services page CSS 
 
 #services-page {
-  height: 900px;
+  height: 680px;
 }
+
 
 .services-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 40px;
+width: 80%;
+margin: 20px auto;
+height: 250px;
 
 }
 
-.services-containerItem {
-  flex: 0 0 20%; 
+.services-containerGrey {
   text-align: center; 
   padding: 10px;
-  border: 1px solid #e6b850;
-  margin: 30px;
-  color: black;
-  background-color: #e6b850;
-  height: 400px;
-  box-shadow: 12px 12px #222222;
+  border: 2px solid #e6b850;
+  background-color: #0f0f0f;
+  width: 100%;
+  height: auto;
+  margin: 0 10px;
+  
 }
 
-.services-containerItem:hover {
+.services-containerGold {
+  text-align: center; 
+  padding: 10px;
+  border: 2px solid transparent;
+  background-color: #e6b950;
+  color: black;
+  width: 100%;
+  margin: 0 10px;
+}
+
+.services-containerGold:hover, .services-containerGrey:hover {
   transform: scale(1.02);
 }
 
-.services-containerItem h1 {
+
+
+ .services-containerGold h1 {
   padding-top: 16px;
   font-family: "Forum", cursive;
-  color: #000000;
-  font-size: 35px;
-  border-bottom: 4px solid #000000;
+color: #0f0f0f;
+  font-size: 32px;
   padding-bottom: 1px;
-  width: 80%;
   margin: 0 auto;
 }
 
-.services-containerItem p {
-  padding-top: 25px;
-  font-family: "DM Sans", sans-serif;
+.services-containerGrey h1  {
+  padding-top: 16px;
+  font-family: "Forum", cursive;
+color: #e6b850;
+  font-size: 32px;
+  
+  padding-bottom: 1px;
+  margin: 0 auto;
+}
+
+.services-containerGold p, .services-containerGrey p {
+  padding: 20px 0;
+  
   font-size: 15px;
   width: 80%;
   margin: 0 auto;
-  font-style: italic;
   text-align: start;
 }
 

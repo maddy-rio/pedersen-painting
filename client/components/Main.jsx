@@ -40,6 +40,7 @@ Elevate your space with our premium services. From residential to commercial pai
   <div class="flex-container">
     <div class="flex-item">
       <div class="image-container">
+    
         <img src="/Taihape.jpeg" alt="House in Taihape"/>
         <div class="static-overlay"></div>
         <div class="overlay"></div>

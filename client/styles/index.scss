@@ -286,7 +286,7 @@ margin: 35px 0 100px 150px;
 // Section 3 CSS
 
 #section3 {
-  padding: 100px 0;  
+  padding-top: 100px;
   height: 600px;
 }
 
@@ -432,73 +432,10 @@ margin: 20px auto;
 // Services page CSS 
 
 #services-page {
-  height: 680px;
+  height: max-content;
 }
 
 
-.services-container {
-  display: flex;
-  justify-content: center;
-width: 80%;
-margin: 20px auto;
-height: 250px;
-
-}
-
-.services-containerGrey {
-  text-align: center; 
-  padding: 10px;
-  border: 2px solid #e6b850;
-  background-color: #0f0f0f;
-  width: 100%;
-  height: auto;
-  margin: 0 10px;
-  
-}
-
-.services-containerGold {
-  text-align: center; 
-  padding: 10px;
-  border: 2px solid transparent;
-  background-color: #e6b950;
-  color: black;
-  width: 100%;
-  margin: 0 10px;
-}
-
-.services-containerGold:hover, .services-containerGrey:hover {
-  transform: scale(1.02);
-}
-
-
-
- .services-containerGold h1 {
-  padding-top: 16px;
-  font-family: "Forum", cursive;
-color: #0f0f0f;
-  font-size: 32px;
-  padding-bottom: 1px;
-  margin: 0 auto;
-}
-
-.services-containerGrey h1  {
-  padding-top: 16px;
-  font-family: "Forum", cursive;
-color: #e6b850;
-  font-size: 32px;
-  
-  padding-bottom: 1px;
-  margin: 0 auto;
-}
-
-.services-containerGold p, .services-containerGrey p {
-  padding: 20px 0;
-  
-  font-size: 15px;
-  width: 80%;
-  margin: 0 auto;
-  text-align: start;
-}
 
 // Our work page CSS
 
@@ -534,6 +471,65 @@ padding-top: 50px;
  padding-bottom: 5px;
  margin-bottom: 35px;
  display: inline-block;
+}
+
+// Services page CSS
+
+.services-header {
+  width: 20%;
+  font-size: 42px;
+ 
+  font-family: "Forum", cursive;
+ border-bottom: 2px solid #e6b850;
+ padding-bottom: 5px;
+ margin-bottom: 35px;
+ display: inline-block;
+}
+
+.services-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+
+#left-section {
+  height: 520px;
+  display: flex;
+  padding: 0 250px 0 250px;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Forum', cursive;
+  color:#e6b850;
+}
+
+#right-section {
+  height: 520px;
+  display: flex;
+  padding: 0 250px 0 250px;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-family: 'Forum', cursive;
+  color:#e6b850;
+}
+
+#left-section img {
+  padding-right: 100px;
+  height: 320px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+#right-section img{
+  padding-left: 100px;
+  height: 320px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#left-section img:hover, #right-section img:hover {
+  transform: scale(1.02);
 }
 
 // Contact page CSS
@@ -592,7 +588,7 @@ font-size: 15px;
    position: relative;
    display: inline-block;
    background-color: #0f0f0f;
-   margin-top: 100px;
+   margin-top: 80px;
 }
 
 .footer-overlay {

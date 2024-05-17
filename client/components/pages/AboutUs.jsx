@@ -33,24 +33,34 @@ function AboutUs() {
                       <div class="about-item">
                           <div class="image-container">
                               <div class="about-overlay"></div>
+                     
                               <img src="/residential.jpeg" alt="Residential building" />
+                              <a href="/services">
                               <div class="overlay"></div>
+                              </a>
                               <div class="about-text">Residential</div>
                           </div>
                       </div>
                       <div class="about-item">
                           <div class="image-container">
                               <div class="about-overlay"></div>
+                        
                               <img src="/commercial.jpeg" alt="Commercial building" />
+                              <a href="/services">
                               <div class="overlay"></div>
+                              </a>
                               <div class="about-text">Commercial</div>
                           </div>
                       </div>
                       <div class="about-item">
                           <div class="image-container">
                               <div class="about-overlay"></div>
+                          
                               <img src="/wallpaper.jpeg" alt="Wallpapering" />
+                            
+                              <a href="/services">
                               <div class="overlay"></div>
+                              </a>
                               <div class="about-text">Wallpapering</div>
                           </div>
                       </div>
@@ -58,8 +68,12 @@ function AboutUs() {
                       <div class="about-item">
                           <div class="image-container">
                               <div class="about-overlay"></div>
+                          
                               <img src="/waterblasting.jpeg" alt="Waterblasting image" />
+                           
+                              <a href="/services">
                               <div class="overlay"></div>
+                              </a>
                               <div class="about-text">Waterblasting</div>
                           </div>
                       </div>

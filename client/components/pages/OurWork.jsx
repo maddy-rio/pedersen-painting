@@ -1,13 +1,20 @@
 import { useState } from "react"
 import Nav from "../Nav"
 import Footer from "../Footer"
-import Carousel from "./Carousel"
+import Carousel from "./Carousels.jsx/Carousel"
+import Carousel2 from "./Carousels.jsx/Carousel2"
+import Carousel3 from "./Carousels.jsx/Carousel3"
+import Carousel4 from "./Carousels.jsx/Carousel4"
+import Carousel5 from "./Carousels.jsx/Carousel5"
+import Carousel6 from "./Carousels.jsx/Carousel6"
 
 function OurWork() {
 
   const [showModal, setShowModal] = useState(false);
+  const [selectedCarousel, setSelectedCarousel] = useState(null);
 
-  const toggleModal = () => {
+  const toggleModal = (carouselComponent) => {
+    setSelectedCarousel(carouselComponent);
     setShowModal(!showModal);
   };
 
@@ -24,7 +31,7 @@ function OurWork() {
       <div class="image-container">
         <img src="/Haumoana.jpeg" alt="House in Haumoana"/>
         <div class="static-overlay"></div>
-        <div onClick={toggleModal} class="overlay"></div>
+        <div onClick={() => toggleModal(<Carousel />)} class="overlay"></div>
         <div class="text">Haumoana</div>
       </div>
     </div>
@@ -32,7 +39,7 @@ function OurWork() {
       <div class="image-container">
         <img src="/Edenlane.jpeg" alt="House on Eden Lane"/>
         <div class="static-overlay"></div>
-        <div onClick={toggleModal} class="overlay"></div>
+        <div onClick={() => toggleModal(<Carousel2 />)} class="overlay"></div>
         <div class="text">Eden Lane</div>
       </div>
     </div>
@@ -40,7 +47,7 @@ function OurWork() {
       <div class="image-container">
         <img src="/Waimarama.jpeg" alt="House in Waimārama"/>
         <div class="static-overlay"></div>
-        <div onClick={toggleModal} class="overlay"></div>
+        <div onClick={() => toggleModal(<Carousel3 />)} class="overlay"></div>
         <div class="text">Waimārama</div>
       </div>
     </div>
@@ -54,7 +61,7 @@ function OurWork() {
       <div class="image-container">
         <img src="/Taihape.jpeg" alt="House in Taihape"/>
         <div class="static-overlay"></div>
-        <div onClick={toggleModal} class="overlay"></div>
+        <div onClick={() => toggleModal(<Carousel4 />)} class="overlay"></div>
         <div class="text">Taihape</div>
       </div>
     </div>
@@ -62,7 +69,7 @@ function OurWork() {
       <div class="image-container">
         <img src="/Interiors.jpeg" alt="Interior pictures"/>
         <div class="static-overlay"></div>
-        <div onClick={toggleModal}class="overlay"></div>
+        <div onClick={() => toggleModal(<Carousel5 />)} class="overlay"></div>
         <div class="text">Interiors</div>
       </div>
     </div>
@@ -70,7 +77,7 @@ function OurWork() {
       <div class="image-container">
         <img src="/Exteriors.jpeg" alt="Exterior pictures"/>
         <div class="static-overlay"></div>
-        <div onClick={toggleModal} class="overlay"></div>
+        <div onClick={() => toggleModal(<Carousel6 />)} class="overlay"></div>
         <div class="text">Exteriors</div>
       </div>
     </div>
@@ -83,8 +90,8 @@ function OurWork() {
 {showModal && (
         <div className="modal-overlay">
           <div className="modal">
-            <button onClick={toggleModal}>x</button>
-           
+            <button onClick={() => toggleModal(null)}>X</button>
+            {selectedCarousel}
           </div>
         </div>
       )}

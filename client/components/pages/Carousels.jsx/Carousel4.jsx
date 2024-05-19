@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-function Carousel() {
+function Carousel4() {
 
     useEffect(() => {
         const list = document.querySelector('.carousel-list');
@@ -55,10 +55,18 @@ function Carousel() {
             <button class="carousel-button carousel-button--left "><img src="/left-chevron.svg" alt="left chevron"/></button>
            <div class="carousel-container">
 <ul class="carousel-list">
-    <li class="carousel-slide current-slide"><img class="carousel-image" src="/Haumoana.jpeg" alt="House in Haumoana"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/Edenlane.jpeg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/Waimarama.jpeg" alt="House in Waimārama"/></li>
-
+    <li class="carousel-slide current-slide"><img class="carousel-image" src="/taihape/1.jpg" alt="House in Haumoana"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/taihape/2.jpg" alt="House on Eden Lane"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/taihape/3.jpg" alt="House in Waimārama"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/taihape/4.jpg" alt="House on Eden Lane"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/taihape/5.jpg" alt="House in Waimārama"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/taihape/6.jpg" alt="House on Eden Lane"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/taihape/7.jpg" alt="House in Waimārama"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/taihape/8.jpg" alt="House on Eden Lane"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/taihape/9.jpg" alt="House in Waimārama"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/taihape/10.jpg" alt="House on Eden Lane"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/taihape/11.jpg" alt="House in Waimārama"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/taihape/12.jpg" alt="House on Eden Lane"/></li>
 </ul>
 
            </div>
@@ -68,4 +76,4 @@ function Carousel() {
     )
 }
 
-export default Carousel
+export default Carousel4

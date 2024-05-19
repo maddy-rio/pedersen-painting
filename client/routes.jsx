@@ -4,7 +4,7 @@ import AboutUs from './components/pages/AboutUs'
 import Services from './components/pages/Services'
 import OurWork from './components/pages/OurWork'
 import Contact from './components/pages/Contact'
-import Carousel from './components/pages/Carousel'
+import Carousel from './components/pages/Carousels.jsx/Carousel'
 
 
 export const routes = (

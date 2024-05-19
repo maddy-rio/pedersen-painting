@@ -495,7 +495,7 @@ padding-top: 50px;
   width: 10%;
   margin: 0;
   padding: 0;
-  background-color: #000000;
+  background-color: transparent;
   color: #e6b950;
   position: absolute;
   right: 0px;
@@ -519,29 +519,29 @@ display: inline-block;
   background-color: transparent;
  position: relative;
  height: 600px;
- width: 80%;
- margin: 30px auto;
+ width: 100%;
+ margin: 0 auto;
 }
 .carousel-button img {
- height: 40px;
- width: 80%;
+ height: 30px;
+ width: 60%;
+ right: 0;
 }
 
 .carousel-button {
 background-color: transparent;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(460%);
   cursor: pointer;
 }
 
 .carousel-button--left {
-  left: -100px;
+  left: -70px;
 }
 
 
 .carousel-button--right {
- right: -100px;
+ right: 10%;
 }
 
 .carousel-container {
@@ -565,7 +565,7 @@ background-color: transparent;
 
 .carousel-image {
   width: 100%;
-  height: 100%;
+  height: 67%;
   object-fit: cover;
 }
 

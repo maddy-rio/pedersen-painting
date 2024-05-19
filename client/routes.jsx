@@ -4,6 +4,7 @@ import AboutUs from './components/pages/AboutUs'
 import Services from './components/pages/Services'
 import OurWork from './components/pages/OurWork'
 import Contact from './components/pages/Contact'
+import Carousel from './components/pages/Carousel'
 
 
 export const routes = (
@@ -13,5 +14,6 @@ export const routes = (
     <Route path="/services" element={<Services />} />
     <Route path="/work" element={<OurWork />} />
     <Route path="/contact" element={<Contact />} />
+    <Route path="/carousel" element={<Carousel />} />
   </Routes>
 )

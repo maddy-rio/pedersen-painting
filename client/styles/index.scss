@@ -459,6 +459,117 @@ padding-top: 50px;
     width: 340px;
 }
 
+// Modal CSS
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: black;
+  width: 800px;
+  height: 500px;
+  padding: 50px 80px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  position: relative;
+}
+
+.modal p {
+  font-size: 15px;
+  
+}
+
+.modal button {
+  border: none;
+  font-size: 24px;
+  width: 10%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #e6b950;
+  position: absolute;
+  right: 0px;
+  top: 14px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  font-weight: bold;
+}
+
+#modal-img {
+  padding: 0 0 15px 0;
+display: inline-block;
+  width: 50%;
+}
+
+// Carousel CSS
+
+.carousel {
+  background-color: transparent;
+ position: relative;
+ height: 600px;
+ width: 80%;
+ margin: 30px auto;
+}
+.carousel-button img {
+ height: 40px;
+ width: 80%;
+}
+
+.carousel-button {
+background-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.carousel-button--left {
+  left: -100px;
+}
+
+
+.carousel-button--right {
+ right: -100px;
+}
+
+.carousel-container {
+
+ height: 100%;
+ position:relative;
+ overflow: hidden;
+}
+.carousel-list {
+ position: relative;
+ height: 100%;
+ transition: transform 250ms ease-in;
+}
+
+.carousel-slide {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ width: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
 // Header CSS for all pages
 

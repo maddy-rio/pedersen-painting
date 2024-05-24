@@ -86,6 +86,7 @@ function OurWork() {
   
 </section>
 </section>
+<Footer/>
 
 {showModal && (
         <div className="modal-overlay">
@@ -95,7 +96,7 @@ function OurWork() {
           </div>
         </div>
       )}
-<Footer />
+
             </section>
            
            

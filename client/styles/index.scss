@@ -26,7 +26,6 @@ h1 {
     justify-content: center;
     position: sticky;
     top: 0;
-    z-index: 100;
     height: 85px;
     background-color: rgb(0, 0, 0);
   
@@ -476,13 +475,12 @@ padding-top: 50px;
 
 .modal {
   background-color: black;
-  width: 900px;
-  height: 600px;
+  width: 880px;
+  height: 550px;
   padding: 50px 80px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
   position: relative;
-  z-index: 1;
 }
 
 .modal p {
@@ -502,18 +500,13 @@ padding-top: 50px;
   right: 0px;
   top: 14px;
   cursor: pointer;
-  z-index: 9999;
 }
 
 .modal button:hover {
   font-weight: bold;
 }
 
-#modal-img {
-  padding: 0 0 15px 0;
-display: inline-block;
-  width: 100%;
-}
+
 
 // Carousel CSS
 
@@ -533,7 +526,7 @@ display: inline-block;
 .carousel-button {
 background-color: transparent;
   position: absolute;
-  top: 42%;
+  top: 40%;
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 10;
@@ -569,7 +562,6 @@ background-color: transparent;
 
 .carousel-image {
   width: 100%;
-  height: 84%;
   object-fit: cover;
 }
 

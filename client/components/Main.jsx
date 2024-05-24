@@ -41,9 +41,11 @@ Elevate your space with our premium services. From residential to commercial pai
     <div class="flex-item">
       <div class="image-container">
     
-        <img src="/Taihape.jpeg" alt="House in Taihape"/>
+        <img  src="/Taihape.jpeg" alt="House in Taihape"/>
         <div class="static-overlay"></div>
+        <a href="/work">
         <div class="overlay"></div>
+        </a>
         <div class="text">Taihape</div>
       </div>
     </div>
@@ -51,7 +53,9 @@ Elevate your space with our premium services. From residential to commercial pai
       <div class="image-container">
         <img  src="/Waimarama.jpeg" alt="House in Waimarama"/>
         <div class="static-overlay"></div>
+        <a href="/work">
         <div class="overlay"></div>
+        </a>
         <div class="text">Waimārama</div>
       </div>
     </div>
@@ -59,7 +63,9 @@ Elevate your space with our premium services. From residential to commercial pai
       <div class="image-container">
         <img src="/Edenlane.jpeg" alt="House on Eden Lane"/>
         <div class="static-overlay"></div>
+        <a href="/work">
         <div class="overlay"></div>
+        </a>
         <div class="text">Eden Lane</div>
       </div>
     </div>

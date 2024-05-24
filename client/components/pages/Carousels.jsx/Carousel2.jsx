@@ -55,16 +55,15 @@ function Carousel2() {
             <button class="carousel-button carousel-button--left "><img src="/left-chevron.svg" alt="left chevron"/></button>
            <div class="carousel-container">
 <ul class="carousel-list">
-    <li class="carousel-slide current-slide"><img class="carousel-image" src="/edenlane/1.jpg" alt="House in Haumoana"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/2.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/3.jpg" alt="House in Waimārama"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/4.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/5.jpg" alt="House in Waimārama"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/6.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/7.jpg" alt="House in Waimārama"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/8.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/9.jpg" alt="House in Waimārama"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/10.jpg" alt="House in Waimārama"/></li>
+    <li class="carousel-slide current-slide"><img class="carousel-image" src="/edenlane/1.jpg" alt="House in Eden Lane exterior"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/2.jpg" alt="Kitchen"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/3.jpg" alt="Living room"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/4.jpg" alt="Bathroom"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/5.jpg" alt="Bedroom"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/7.jpg" alt="Bathroom 2"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/8.jpg" alt="Bedroom"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/9.jpg" alt="Bedroom"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/10.jpg" alt="Hallway"/></li>
 </ul>
 
            </div>

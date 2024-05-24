@@ -10,7 +10,7 @@ function Services() {
        {/* Residential */}
     <section id="left-section">
       <a href='/work'>
-<img src="/services1.jpeg"></img>
+<img src="/services1.jpeg" alt="House in Waimarama's living room"></img>
 </a>
 <div className="services-text">
   <p className="section-header">Residential</p>
@@ -22,7 +22,7 @@ function Services() {
     {/*  Commercial */}
     <section id="right-section">
     <a href='/work'>
-      <img src="/services2.jpeg"></img>
+      <img src="/services2.jpeg" alt="Commercial building exterior"></img>
       </a>
       <div className="services-text">
       <p className="section-header">Commercial</p>
@@ -34,7 +34,7 @@ function Services() {
      {/* Wallpapering */}
      <section id="left-section">
      <a href='/work'>
-<img src="/services3.jpeg"></img>
+<img src="/services3.jpeg" alt="House in Waimarama's bathroom"></img>
 </a>
 <div className="services-text">
   <p className="section-header">Wallpapering</p>
@@ -47,7 +47,7 @@ function Services() {
     {/*  Waterblasting  */}
     <section id="right-section">
       
-      <img src="/services4.jpeg"></img>
+      <img src="/services4.jpeg" alt="Waterblasting exterior of house"></img>
       <div className="services-text">
       <p className="section-header">Waterblasting</p>
       <p>Before painting exterior surfaces, Pedersen Painting uses waterblasting to clean and prepare the area. This process removes dirt, grime, and old paint layers, creating an ideal surface for paint adhesion. Environmental considerations are taken into account throughout the process.</p>

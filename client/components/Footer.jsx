@@ -26,7 +26,7 @@ function footer() {
          <p class="footer-contact">Contact us</p>
          <p class="footer-number">027 207 1306</p>
          <a class="footer-email" href="mailto:jayden@pedersenpainting.co.nz">jayden@pedersenpainting.co.nz</a>
-         <p class="footer-social">Connect on &nbsp; <a href='/'><FaFacebook /></a> <a href='/'><FaInstagram /></a></p>
+         <p class="footer-social">Connect on &nbsp; <a href='https://www.facebook.com/profile.php?id=100095498316361&mibextid=JRoKGi' target='_blank'><FaFacebook /></a> <a href='https://www.instagram.com/pedersenpaintinganddecorating?igsh=b2NqbTIyOTljdm0=' target='_blank'><FaInstagram /></a></p>
       </div>
       </div>
        <div class="footer-overlay"></div>

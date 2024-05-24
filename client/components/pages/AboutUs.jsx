@@ -56,7 +56,7 @@ function AboutUs() {
                           <div class="image-container">
                               <div class="about-overlay"></div>
                           
-                              <img src="/wallpaper.jpeg" alt="Wallpapering" />
+                              <img src="/wallpaper.jpeg" alt="Wallpaper with gold and black" />
                             
                               <a href="/services">
                               <div class="overlay"></div>

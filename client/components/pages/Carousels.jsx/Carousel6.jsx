@@ -56,14 +56,14 @@ function Carousel6() {
             <button class="carousel-button carousel-button--left "><img src="/left-chevron.svg" alt="left chevron"/></button>
            <div class="carousel-container">
 <ul class="carousel-list">
-    <li class="carousel-slide current-slide"><img class="carousel-image" src="/exteriors/1.jpg" alt="House in Haumoana"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/2.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/3.jpg" alt="House in Waimārama"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/4.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/5.jpg" alt="House in Waimārama"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/6.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/7.jpg" alt="House in Waimārama"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/8.jpg" alt="House on Eden Lane"/></li>
+    <li class="carousel-slide current-slide"><img class="carousel-image" src="/exteriors/1.jpg" alt="House exterior"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/2.jpg" alt="House exterior"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/3.jpg" alt="House exterior"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/4.jpg" alt="House exterior"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/5.jpg" alt="House exterior"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/6.jpg" alt="House exterior"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/7.jpg" alt="Commercial shed exterior"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/exteriors/8.jpg" alt="Commercial shed exterior"/></li>
 </ul>
 
            </div>

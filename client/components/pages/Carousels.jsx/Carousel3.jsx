@@ -55,21 +55,21 @@ function Carousel3() {
             <button class="carousel-button carousel-button--left "><img src="/left-chevron.svg" alt="left chevron"/></button>
            <div class="carousel-container">
 <ul class="carousel-list">
-    <li class="carousel-slide current-slide"><img class="carousel-image" src="/waimarama/1.jpg" alt="House in Haumoana"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/2.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/3.jpg" alt="House in Waimārama"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/4.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/5.jpg" alt="House in Waimārama"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/6.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/7.jpg" alt="House in Waimārama"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/8.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/9.jpg" alt="House in Waimārama"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/10.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/11.jpg" alt="House in Waimārama"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/12.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/13.jpg" alt="House in Waimārama"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/14.jpg" alt="House on Eden Lane"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/15.jpg" alt="House in Waimārama"/></li>
+    <li class="carousel-slide current-slide"><img class="carousel-image" src="/waimarama/1.jpg" alt="House in Waimaram exterior"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/2.jpg" alt="Entrance hallway"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/3.jpg" alt="Master bedroom entrance"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/4.jpg" alt="Master bedroom"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/5.jpg" alt="Master bathroom"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/6.jpg" alt="Bedroom"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/7.jpg" alt="Hallway"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/8.jpg" alt="Toilet"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/9.jpg" alt="Bathroom"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/10.jpg" alt="Living room view"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/11.jpg" alt="Living room"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/12.jpg" alt="Laundry"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/13.jpg" alt="Living room 2"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/14.jpg" alt="Kitchen"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/waimarama/15.jpg" alt="Wardrobe"/></li>
 </ul>
 
            </div>

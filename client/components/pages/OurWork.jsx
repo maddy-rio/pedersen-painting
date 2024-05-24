@@ -90,7 +90,7 @@ function OurWork() {
 {showModal && (
         <div className="modal-overlay">
           <div className="modal">
-            <button onClick={() => toggleModal(null)}>X</button>
+            < button className="exit-button" onClick={() => toggleModal(null)}>X</button>
             {selectedCarousel}
           </div>
         </div>

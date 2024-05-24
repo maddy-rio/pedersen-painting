@@ -222,7 +222,7 @@ letter-spacing: 1px;
 width: 180px;
 height: 40px;
 padding: 8px 10px;
-margin: 35px 0 100px 150px;
+margin: 35px 0 100px 240px;
 
 }
 
@@ -476,8 +476,8 @@ padding-top: 50px;
 
 .modal {
   background-color: black;
-  width: 800px;
-  height: 500px;
+  width: 900px;
+  height: 600px;
   padding: 50px 80px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
@@ -489,7 +489,7 @@ padding-top: 50px;
   
 }
 
-.modal button {
+.exit-button {
   border: none;
   font-size: 24px;
   width: 10%;
@@ -510,7 +510,7 @@ padding-top: 50px;
 #modal-img {
   padding: 0 0 15px 0;
 display: inline-block;
-  width: 50%;
+  width: 100%;
 }
 
 // Carousel CSS
@@ -523,7 +523,7 @@ display: inline-block;
  margin: 0 auto;
 }
 .carousel-button img {
- height: 30px;
+ height: 55px;
  width: 60%;
  right: 0;
 }
@@ -531,17 +531,19 @@ display: inline-block;
 .carousel-button {
 background-color: transparent;
   position: absolute;
-  transform: translateY(460%);
+  top: 42%;
+  transform: translateY(-50%);
   cursor: pointer;
+  z-index: 10;
 }
 
 .carousel-button--left {
-  left: -70px;
+  left: -100px;
 }
 
 
 .carousel-button--right {
- right: 10%;
+ right: -100px;
 }
 
 .carousel-container {
@@ -565,7 +567,7 @@ background-color: transparent;
 
 .carousel-image {
   width: 100%;
-  height: 67%;
+  height: 84%;
   object-fit: cover;
 }
 

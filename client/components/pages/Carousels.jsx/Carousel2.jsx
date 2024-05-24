@@ -64,6 +64,7 @@ function Carousel2() {
     <li class="carousel-slide"><img class="carousel-image" src="/edenlane/7.jpg" alt="House in Waimārama"/></li>
     <li class="carousel-slide"><img class="carousel-image" src="/edenlane/8.jpg" alt="House on Eden Lane"/></li>
     <li class="carousel-slide"><img class="carousel-image" src="/edenlane/9.jpg" alt="House in Waimārama"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/edenlane/10.jpg" alt="House in Waimārama"/></li>
 </ul>
 
            </div>

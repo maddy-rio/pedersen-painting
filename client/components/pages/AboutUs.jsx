@@ -13,17 +13,15 @@ function AboutUs() {
   
   
               <div>
-                  <p>Pedersen Painting & Decorating is your top choice for exceptional painting services in Hawkes Bay. With over a decade of business, we've earned a reputation for delivering craftsmanship of unmatched quality and excellence.</p>
+                  <p>Pedersen Painting & Decorating is your top choice for exceptional painting services in Hawke's Bay. With over a decade of experience, we've built a reputation for quality craftsmanship and excellence.</p>
                   <br />
-                  <p>Meet our team: Tony and Jayden, a father-and-son duo, along with Casey and Mark, long-time partners in painting. Together, they bring over 60 years of combined expertise to every project, ensuring attention to detail and a flawless finish.</p>
+                  <p>Our team is led by Tony and Jayden, a father-and-son duo, and includes two additional skilled painters. We focus on premium end homes and use only the best products to ensure superior results.</p>
                   <br />
-                  <hr class="about-hr" />
+                
+        
+                  <p>Whether it's painting your home or enhancing your business, we handle every project with care and precision. Our comprehensive services, from wallpapering to water blasting, cater to all your painting needs.</p>
                   <br />
-                  <p>At Pedersen Painting, we're all about delivering premium results without the fuss. Whether it's painting your home or sprucing up your business, we handle it all with care and precision. With trusted partnerships and advanced techniques, we guarantee a stunning transformation every time.</p>
-                  <br />
-                  <p>From wallpapering to water blasting, our comprehensive services cater to all your painting needs. Expect nothing short of excellence from Pedersen Painting & Decorating – where quality meets simplicity, and your satisfaction is our priority.</p>
-                  <br />
-                  <p>Ready to elevate your space with Pedersen Painting & Decorating? Explore our services below and discover why we're the trusted name in painting excellence throughout Hawkes Bay.</p>
+                  <p>Ready to elevate your space with Pedersen Painting & Decorating? Explore our services below and discover why we're the trusted name in painting excellence throughout Hawke's Bay.</p>
                   <br />
                   <hr class="about-hr" />
   

@@ -80,7 +80,7 @@ z-index: 1000;
           transition: width 0.4s ease, left 0.4s ease;
         }
         &:hover:after {
-            width: 14%; /* Adjusted width to 12% to approximately match text width */
+            width: 14%; 
             left: calc((100% - 14%) / 2);
         }
       
@@ -445,7 +445,7 @@ margin: 20px auto;
 // Our work page CSS
 
 #work-page {
-height: 900px;
+height: auto;
 padding-top: 50px;
 }
 
@@ -456,8 +456,8 @@ padding-top: 50px;
 }
 
 #work-section {
-  
-  height: 400px;
+  margin-bottom: 60px;
+  height: auto;
 }
 
 #work-section img {
@@ -813,6 +813,23 @@ li a:hover {
 
 @media only screen and (max-width: 1200px) {
 
+  .menuItem {
+ 
+        &:hover:after {
+            width: 40%; 
+            left: calc((100% - 40%) / 2);
+        }
+      
+        &:not(:hover):after {
+          width: 0; 
+          left: 50%; 
+        }
+  }
+
+  .contact-form {
+    width: 450px;
+  }
+
   .about-us {
     padding: 0 150px;
     height: auto;
@@ -823,14 +840,12 @@ li a:hover {
     margin-bottom: 20px;
   }
 
-  .about-header {
-    width: 25%;
+  .about-header, .services-header, .page-header {
+    width: 28%;
     font-size: 32px;
   }
 
-  .about-text {
-    font-size: 30px;
-  }
+ 
 
   #about-section img {
     width: 350px;
@@ -945,13 +960,6 @@ li a:hover {
     margin-bottom: 20px;
   }
 
- 
-
-  .about-text {
-    font-size: 28px;
-  }
-
-
 
   .about-hr {
     width: 100%;
@@ -1019,11 +1027,6 @@ li a:hover {
   .about-us {
     padding: 0 50px;
     font-size: 18px;
-  }
-
-
-  .about-text {
-    font-size: 24px;
   }
 
 
@@ -1113,12 +1116,6 @@ li a:hover {
 
 
 
-  .about-text {
-    font-size: 22px;
-  }
-
-
-
   .about-hr {
     width: 100%;
   }
@@ -1165,12 +1162,6 @@ li a:hover {
   .about-us {
     padding: 0 20px;
     font-size: 14px;
-  }
-
-  
-
-  .about-text {
-    font-size: 20px;
   }
 
 

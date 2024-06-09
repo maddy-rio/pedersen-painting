@@ -813,6 +813,34 @@ li a:hover {
 
 @media only screen and (max-width: 1200px) {
 
+  .about-us {
+    padding: 0 150px;
+    height: auto;
+  }
+
+  .about-item {
+    flex: 0 0 45%;
+    margin-bottom: 20px;
+  }
+
+  .about-header {
+    width: 25%;
+    font-size: 32px;
+  }
+
+  .about-text {
+    font-size: 30px;
+  }
+
+  #about-section img {
+    width: 350px;
+    height: 320px;
+  }
+
+  .about-hr {
+    width: 100%;
+  }
+
   #section3 {
     padding-top: 100px;
     display: flex;
@@ -907,6 +935,28 @@ li a:hover {
 
 @media only screen and (max-width: 992px) {
 
+  .about-us {
+    padding: 0 100px;
+    font-size: 20px;
+  }
+
+  .about-item {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+ 
+
+  .about-text {
+    font-size: 28px;
+  }
+
+
+
+  .about-hr {
+    width: 100%;
+  }
+
   .section-text {
       padding: 0 120px;
       font-size: 18px;
@@ -965,6 +1015,21 @@ li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .about-us {
+    padding: 0 50px;
+    font-size: 18px;
+  }
+
+
+  .about-text {
+    font-size: 24px;
+  }
+
+
+  .about-hr {
+    width: 100%;
+  }
 
   .section-text {
       padding: 0 100px;
@@ -1041,6 +1106,23 @@ li a:hover {
 
 @media only screen and (max-width: 576px) {
 
+  .about-us {
+    padding: 0 30px;
+    font-size: 16px;
+  }
+
+
+
+  .about-text {
+    font-size: 22px;
+  }
+
+
+
+  .about-hr {
+    width: 100%;
+  }
+
   .section-text {
     padding: 0 100px;
     font-size: 16px;
@@ -1079,6 +1161,23 @@ li a:hover {
 }
 
 @media only screen and (max-width: 480px) {
+
+  .about-us {
+    padding: 0 20px;
+    font-size: 14px;
+  }
+
+  
+
+  .about-text {
+    font-size: 20px;
+  }
+
+
+  .about-hr {
+    width: 100%;
+  }
+
   .section-text {
     padding: 0 100px;
     font-size: 16px;

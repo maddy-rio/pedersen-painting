@@ -810,6 +810,27 @@ li a:hover {
 /* Responsive CSS */
 /* Media Queries */
 
+@media only screen and (max-width: 1400px) {
+  #left-section,
+  #right-section {
+    flex-direction: column;
+    padding: 0 150px;
+    height: auto;
+  }
+
+  #left-section img,
+  #right-section img {
+    padding: 0;
+    margin: 40px 0;
+    height: 300px;
+  }
+
+  .services-text {
+    font-size: 20px;
+    margin-bottom: 100px;
+    width: 80%;
+  }
+}
 
 @media only screen and (max-width: 1200px) {
 
@@ -849,8 +870,8 @@ li a:hover {
   }
 
   .about-header, .services-header, .page-header {
-    width: 28%;
-    font-size: 32px;
+    width: 36%;
+    font-size: 30px;
   }
 
  
@@ -957,6 +978,21 @@ li a:hover {
 }
 
 @media only screen and (max-width: 992px) {
+
+  #left-section,
+  #right-section {
+    padding: 0 100px;
+  }
+
+  #left-section img,
+  #right-section img {
+    height: 280px;
+  }
+
+  .services-text {
+    font-size: 18px;
+  }
+
   .modal {
     height: 480px;
   }
@@ -1038,6 +1074,22 @@ li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  
+
+  #left-section,
+  #right-section {
+    padding: 0 50px;
+  }
+
+  #left-section img,
+  #right-section img {
+    height: 260px;
+  }
+
+  .services-text {
+    font-size: 16px;
+  }
+
   .modal {
     height: 430px;
   }
@@ -1130,6 +1182,23 @@ li a:hover {
 }
 
 @media only screen and (max-width: 576px) {
+
+
+  #left-section,
+  #right-section {
+    padding: 0 30px;
+  }
+
+  #left-section img,
+  #right-section img {
+    height: 240px;
+  }
+
+  .services-text {
+    font-size: 14px;
+  }
+
+
   .modal {
     height: 350px;
   }
@@ -1192,6 +1261,20 @@ li a:hover {
 }
 
 @media only screen and (max-width: 480px) {
+  #left-section,
+  #right-section {
+    padding: 0 20px;
+  }
+
+  #left-section img,
+  #right-section img {
+    height: 220px;
+  }
+
+  .services-text {
+    font-size: 12px;
+  }
+
 
   .modal {
     height: 350px;

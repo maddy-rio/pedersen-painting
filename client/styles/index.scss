@@ -813,6 +813,14 @@ li a:hover {
 
 @media only screen and (max-width: 1200px) {
 
+  .modal {
+    height: 550px;
+  }
+
+  .carousel-button {
+    top: 40%;
+  }
+
   .menuItem {
  
         &:hover:after {
@@ -949,6 +957,13 @@ li a:hover {
 }
 
 @media only screen and (max-width: 992px) {
+  .modal {
+    height: 480px;
+  }
+
+  .carousel-button {
+    top: 30%;
+  }
 
   .about-us {
     padding: 0 100px;
@@ -1023,6 +1038,13 @@ li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  .modal {
+    height: 430px;
+  }
+
+  .carousel-button {
+    top: 30%;
+  }
 
   .about-us {
     padding: 0 50px;
@@ -1108,6 +1130,18 @@ li a:hover {
 }
 
 @media only screen and (max-width: 576px) {
+  .modal {
+    height: 350px;
+  }
+
+  .exit-button {
+    right: 10px;
+  }
+  
+  .carousel-button {
+    top: 20%;
+  }
+
 
   .about-us {
     padding: 0 30px;
@@ -1158,6 +1192,19 @@ li a:hover {
 }
 
 @media only screen and (max-width: 480px) {
+
+  .modal {
+    height: 350px;
+  }
+
+  .exit-button {
+    right: 10px;
+  }
+  
+  .carousel-button {
+    top: 20%;
+  }
+
 
   .about-us {
     padding: 0 20px;

@@ -293,7 +293,6 @@ margin: 40px auto;
 #section3 {
   padding: 100px 0;
 height: auto;
-
 }
 
 #section3 img {
@@ -303,16 +302,19 @@ height: auto;
 .flex-container {
   display: flex;
   justify-content: center; 
+  
 }
 
 .flex-item {
   flex: 0 0 26%; 
   text-align: center; 
+margin: 20px;
 }
 
 .image-container {
   position: relative;
   display: inline-block;
+  margin: 10px;
 }
 
 .static-overlay {
@@ -462,6 +464,20 @@ padding-top: 50px;
 
 #work-section img {
     width: 340px;
+}
+
+.work-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px; 
+  width: 80%;
+}
+
+.work-flex-item {
+  flex: 0 0 calc(33.33% - 20px);
+
 }
 
 // Modal CSS
@@ -811,6 +827,8 @@ li a:hover {
 /* Media Queries */
 
 @media only screen and (max-width: 1400px) {
+
+  // Services page
   #left-section,
   #right-section {
     flex-direction: column;
@@ -834,6 +852,8 @@ li a:hover {
 
 @media only screen and (max-width: 1200px) {
 
+  // Work page
+
   .modal {
     height: 550px;
   }
@@ -855,10 +875,13 @@ li a:hover {
         }
   }
 
+  // Contact page
+
   .contact-form {
     width: 450px;
   }
 
+  // About us page
   .about-us {
     padding: 0 150px;
     height: auto;
@@ -877,13 +900,16 @@ li a:hover {
  
 
   #about-section img {
-    width: 350px;
-    height: 320px;
+    width: 300px;
+    height: 260px;
   }
 
   .about-hr {
     width: 100%;
   }
+
+
+  // Main page
 
   #section3 {
     padding-top: 100px;
@@ -895,12 +921,14 @@ li a:hover {
   #section3 .flex-item {
     flex: 0 0 100%; 
     text-align: center;
-    margin: 10px; 
+ 
   }
 
 
   .flex-container {
-    display:block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
 
@@ -936,6 +964,8 @@ li a:hover {
   .text {
       font-size: 30px;
   }
+
+  // Footer
 
   .footer-text {
       font-size: 18px;
@@ -979,6 +1009,8 @@ li a:hover {
 
 @media only screen and (max-width: 992px) {
 
+  // Services page
+
   #left-section,
   #right-section {
     padding: 0 100px;
@@ -993,6 +1025,9 @@ li a:hover {
     font-size: 18px;
   }
 
+
+  // Work page
+
   .modal {
     height: 480px;
   }
@@ -1000,6 +1035,8 @@ li a:hover {
   .carousel-button {
     top: 30%;
   }
+
+  // About us page
 
   .about-us {
     padding: 0 100px;
@@ -1011,10 +1048,17 @@ li a:hover {
     margin-bottom: 20px;
   }
 
+  #about-section img {
+    width: 360px;
+    height: 300px;
+  }
+
 
   .about-hr {
     width: 100%;
   }
+
+  // Main page
 
   .section-text {
       padding: 0 120px;
@@ -1036,6 +1080,9 @@ li a:hover {
   .text {
       font-size: 28px;
   }
+
+
+  // Footer
 
   .footer-text {
       font-size: 16px;
@@ -1075,6 +1122,7 @@ li a:hover {
 
 @media only screen and (max-width: 768px) {
   
+// Services page
 
   #left-section,
   #right-section {
@@ -1090,6 +1138,9 @@ li a:hover {
     font-size: 16px;
   }
 
+
+  // Work page
+
   .modal {
     height: 430px;
   }
@@ -1097,6 +1148,8 @@ li a:hover {
   .carousel-button {
     top: 30%;
   }
+
+  // About us page
 
   .about-us {
     padding: 0 50px;
@@ -1107,6 +1160,8 @@ li a:hover {
   .about-hr {
     width: 100%;
   }
+
+  // Main page
 
   .section-text {
       padding: 0 100px;
@@ -1138,6 +1193,8 @@ li a:hover {
   .text {
       font-size: 28px;
   }
+
+  // Footer
 
   .footer-text {
       font-size: 14px;
@@ -1183,6 +1240,7 @@ li a:hover {
 
 @media only screen and (max-width: 576px) {
 
+// Services page
 
   #left-section,
   #right-section {
@@ -1198,6 +1256,7 @@ li a:hover {
     font-size: 14px;
   }
 
+  // Work page
 
   .modal {
     height: 350px;
@@ -1211,6 +1270,7 @@ li a:hover {
     top: 20%;
   }
 
+  // About us page
 
   .about-us {
     padding: 0 30px;
@@ -1222,6 +1282,9 @@ li a:hover {
   .about-hr {
     width: 100%;
   }
+
+
+  // Main page
 
   .section-text {
     padding: 0 100px;
@@ -1254,6 +1317,8 @@ li a:hover {
       height: 200px;
   }
 
+  // Footer
+
   .footer-text {
       font-size: 12px;
   }
@@ -1261,6 +1326,9 @@ li a:hover {
 }
 
 @media only screen and (max-width: 480px) {
+
+// Services page
+
   #left-section,
   #right-section {
     padding: 0 20px;
@@ -1275,6 +1343,7 @@ li a:hover {
     font-size: 12px;
   }
 
+  // Work page
 
   .modal {
     height: 350px;
@@ -1298,6 +1367,8 @@ li a:hover {
   .about-hr {
     width: 100%;
   }
+
+  // Main page
 
   .section-text {
     padding: 0 100px;

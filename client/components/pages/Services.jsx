@@ -6,7 +6,7 @@ function Services() {
     <>
       <section>
         <Nav />
-        <h1 class="services-header">Our Services</h1>
+        <h1 class="services-header">Services</h1>
        {/* Residential */}
     <section id="left-section">
       <a href='/work'>

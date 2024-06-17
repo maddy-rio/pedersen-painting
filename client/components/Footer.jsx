@@ -30,7 +30,7 @@ function footer() {
       </div>
       </div>
        <div class="footer-overlay"></div>
-        <div class="footer-text">© 2024 Pedersen Painting & Decorating LTD  &nbsp; &nbsp;|  &nbsp; &nbsp;  All rights reserved</div>
+        <div class="footer-text">© 2024 Pedersen Painting & Decorating LTD. &nbsp; All Rights Reserved</div>
     </section>
  )
 }

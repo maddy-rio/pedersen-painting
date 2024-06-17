@@ -93,7 +93,7 @@ z-index: 1000;
   
   .hamburger {
     position: fixed;
-    z-index: 100;
+    z-index: 1100;
     right: 1rem;
     padding: 20px;
   background-color: transparent;
@@ -111,7 +111,7 @@ z-index: 1000;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 100;
+    z-index: 1000;
     background: rgba(0, 0, 0, 0.933);
     color: #e6b850;
     list-style: none;
@@ -551,7 +551,7 @@ background-color: transparent;
   top: 40%;
   transform: translateY(-50%);
   cursor: pointer;
-
+z-index: 1100;
 }
 
 .carousel-button--left {
@@ -893,7 +893,7 @@ li a:hover {
   }
 
   .about-header, .services-header, .page-header {
-    width: 36%;
+    width: 14%;
     font-size: 30px;
   }
 
@@ -1007,6 +1007,22 @@ li a:hover {
 
 }
 
+@media only screen and (max-width: 1024px) {
+  .hamburger {
+    top: 10px;
+    right: 10px;
+  }
+
+  .menu {
+    padding-top: 3rem;
+  }
+
+  .carousel-button {
+    top: 45%;
+  }
+}
+
+
 @media only screen and (max-width: 992px) {
 
   // Services page
@@ -1056,6 +1072,10 @@ li a:hover {
 
   .about-hr {
     width: 100%;
+  }
+
+  .about-header, .services-header, .page-header {
+    width: 28%;
   }
 
   // Main page
@@ -1160,6 +1180,9 @@ li a:hover {
   .about-hr {
     width: 100%;
   }
+
+ 
+ 
 
   // Main page
 
@@ -1282,6 +1305,8 @@ li a:hover {
   .about-hr {
     width: 100%;
   }
+
+
 
 
   // Main page

@@ -7,7 +7,7 @@ function AboutUs() {
       <>
       <Nav />
       <section>
-          <h1 class="about-header">&nbsp;&nbsp;About us&nbsp;&nbsp;</h1>
+          <h1 class="about-header">&nbsp;&nbsp;About us</h1>
           <section class="about-us">
   
   
@@ -23,7 +23,7 @@ function AboutUs() {
                   <br />
                   <p>Ready to elevate your space with Pedersen Painting & Decorating? Explore our services below and discover why we're the trusted name in painting excellence throughout Hawke's Bay.</p>
                   <br />
-                  <hr class="about-hr" />
+                
   
               </div>
               <div id='about-section'>

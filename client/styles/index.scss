@@ -51,6 +51,7 @@ justify-content: start;
 padding-left: 30px;
 background-color: rgba(0, 0, 0, 0.719);
 position: fixed;
+z-index: 1100;
     }
   
 
@@ -97,7 +98,7 @@ position: fixed;
   .hamburger {
     position: fixed;
     z-index: 1100;
-    right: 1rem;
+    right: 0rem;
     padding: 20px;
   background-color: transparent;
     color: #e6b850;
@@ -320,7 +321,7 @@ height: auto;
   flex-wrap: wrap;
    justify-content: center;
    align-content: center;
-   gap: 20px; 
+   gap: 50px; 
  margin: 0 auto;
  
 }
@@ -386,7 +387,7 @@ height: auto;
 
 
 #about-section {
-  padding: 80px 0;  
+  padding: 50px 0;  
 }
 
 .about-header {
@@ -398,7 +399,7 @@ height: auto;
   display: inline-block;
 }
 .about-us {
-  padding: 0 150px;
+  padding: 0 100px;
   height: auto;
   text-align: center;
   font-size: 22px;
@@ -406,7 +407,7 @@ height: auto;
 }
 
 .about-us p {
-  padding: 0 100px;
+  padding: 0 50px;
 }
 
 
@@ -444,6 +445,10 @@ height: auto;
   height: 260px;
 }
 
+#about-section .flex-container {
+  gap: 30px;
+}
+ 
 .about-hr {
   border: 2px solid #e6b850;
   margin: 0 auto;
@@ -701,13 +706,13 @@ z-index: 1100;
   flex-direction: column;
   justify-content: center;
   font-size: 22px;
-
  padding: 50px 0 80px 0;
  margin: 0 auto;
  flex-grow: 1;       
- flex-shrink: 0;     
+ flex-shrink: 1;     
  flex-basis: 400px; 
- max-width: 550px;
+ max-width: 650px;
+ min-width: 320px;
 }
 
 .contact-form input, .contact-form textarea {
@@ -881,7 +886,7 @@ li a:hover {
   .services-text, .section-text {
     font-size: 20px;
     width: 80%;
-    margin: 0 0 100px 0;
+    margin: 0 0 80px 0;
   }
 
   #services-left, #section-left {
@@ -907,8 +912,8 @@ li a:hover {
   }
 
   #services-left img, #services-right img, #section-left img, #section-right img {
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
 }
 }
 
@@ -944,7 +949,6 @@ li a:hover {
 
 
   .about-header, .services-header, .page-header {
-    width: 25%;
     font-size: 35px;
   }
 
@@ -983,7 +987,7 @@ li a:hover {
   }
 
   .footer-container {
-      padding: 80px 0 0 100px;
+      padding: 100px 0 0 80px;
   }
 
   .footer-heading {
@@ -1054,6 +1058,7 @@ li a:hover {
 
   .about-us {
     font-size: 20px;
+    padding: 0 50px;
   }
 
 
@@ -1079,6 +1084,10 @@ li a:hover {
   .text {
       font-size: 28px;
   }
+
+  #section3 img {
+    width: 300px;
+}
 
 
   // Footer
@@ -1178,7 +1187,7 @@ s
 
   .footer-container {
       grid-template-columns: repeat(2, 1fr);
-      padding: 80px 0 0 80px;
+      padding: 60px 0 0 50px;
   }
 
   .footer-heading {
@@ -1216,9 +1225,13 @@ s
 
 @media only screen and (max-width: 576px) {
 
+// Nav bar 
+
+.nav-image {
+  height: 40px;
+}
+
 // Services page
-
-
 
   .services-text {
     font-size: 14px;
@@ -1244,6 +1257,9 @@ s
     font-size: 16px;
   }
 
+  .about-us p {
+     padding: 0;
+}
 
 
   .about-hr {
@@ -1265,16 +1281,20 @@ s
     font-size: 24px;
 }
 
-  .nav-image {
-      height: 46px;
-  }
+
 
 
 
   .banner {
-      font-size: 36px;
-      width: 560px;
+      font-size: 32px;
+      width: 420px;
       height: 200px;
+  }
+
+  // Contact page 
+
+  .contact-text {
+    font-size: 18px;
   }
 
   // Footer
@@ -1321,23 +1341,7 @@ s
     font-size: 16px;
 }
 
-
-
-
 .section-header {
     font-size: 24px;
 }
-
-  .nav-image {
-      height: 46px;
-  }
-
- 
-
-  .banner {
-      font-size: 36px;
-      width: 560px;
-      height: 200px;
-  }
-
 }

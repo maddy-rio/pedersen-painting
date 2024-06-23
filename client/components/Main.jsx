@@ -14,9 +14,9 @@ function Main() {
     </section>
 
     {/* Section 1 */}
-    <section id="section1">
-<img src="/waimarama1.jpeg" alt="House in Waimarama's hallway"></img>
-<div className="section-text">
+    <section id="section-left">
+<img classname="main-image"src="/waimarama1.jpeg" alt="House in Waimarama's hallway"></img>
+<div className="section-text main-image">
   <p className="section-header">WHO WE ARE</p>
 <p>Welcome to Pedersen Painting & Decorating, your trusted choice for superior painting solutions in Hawke's Bay. As a family-run business, we take pride in delivering exceptional results tailored to your vision. With a focus on residential new builds and partnerships with industry leaders, we promise a premium finish that stands the test of time.</p>
             <button class="section-button" onClick={() => window.location.href = '/about'}>More about us</button>
@@ -25,9 +25,9 @@ function Main() {
 
 
     {/*  Section 2  */}
-    <section id="section2">
-      <img src="/waimarama2.jpeg" alt="House in Waimarama's bathroom"></img>
-      <div className="section-text">
+    <section id="section-right">
+      <img classname="main-image" src="/waimarama2.jpeg" alt="House in Waimarama's bathroom"></img>
+      <div className="section-text main-image">
       <p className="section-header">OUR SERVICES</p>
       <p>
 Elevate your space with our premium services. From residential to commercial painting, we specialize in precision and professionalism. Our offerings include interior and exterior transformations, wallpapering, waterblasting, and roof painting. Explore our services and experience the difference in every project.</p>

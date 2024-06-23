@@ -7,7 +7,7 @@ function AboutUs() {
       <>
       <Nav />
       <section>
-          <h1 class="about-header">About us</h1>
+          <h1 class="about-header">&nbsp;&nbsp;About us&nbsp;&nbsp;</h1>
           <section class="about-us">
   
   
@@ -28,7 +28,6 @@ function AboutUs() {
               </div>
               <div id='about-section'>
                   <div class="flex-container">
-                      <div class="about-item">
                           <div class="image-container">
                               <div class="about-overlay"></div>
                      
@@ -37,9 +36,9 @@ function AboutUs() {
                               <div class="overlay"></div>
                               </a>
                               <div class="about-text">Residential</div>
-                          </div>
+        
                       </div>
-                      <div class="about-item">
+            
                           <div class="image-container">
                               <div class="about-overlay"></div>
                         
@@ -48,9 +47,9 @@ function AboutUs() {
                               <div class="overlay"></div>
                               </a>
                               <div class="about-text">Commercial</div>
-                          </div>
+
                       </div>
-                      <div class="about-item">
+                 
                           <div class="image-container">
                               <div class="about-overlay"></div>
                           
@@ -60,10 +59,10 @@ function AboutUs() {
                               <div class="overlay"></div>
                               </a>
                               <div class="about-text">Wallpapering</div>
-                          </div>
+                        
                       </div>
   
-                      <div class="about-item">
+                   
                           <div class="image-container">
                               <div class="about-overlay"></div>
                           
@@ -74,7 +73,7 @@ function AboutUs() {
                               </a>
                               <div class="about-text">Waterblasting</div>
                           </div>
-                      </div>
+            
                   </div>
               </div>
           </section>

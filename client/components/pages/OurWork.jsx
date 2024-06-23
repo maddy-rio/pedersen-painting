@@ -22,7 +22,7 @@ function OurWork() {
         <>
             <Nav />
             <section>
-            <h1 class="page-header">Our work</h1>
+            <h1 class="page-header">&nbsp;&nbsp;Our work&nbsp;&nbsp;</h1>
              <section id="work-page">
         
             <section id="work-section">

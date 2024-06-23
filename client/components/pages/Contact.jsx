@@ -26,8 +26,9 @@ function Contact() {
         <>
           <Nav />
            <section>
-           <h1 class="page-header">Contact us</h1>
+           <h1 class="page-header">&nbsp;&nbsp;Contact us&nbsp;&nbsp;</h1>
            <p>Fill out the form below to get in touch</p>
+           <div className='contact-container'>
            <form class="contact-form" onSubmit={handleSubmit}>
       <input type="name" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
@@ -35,6 +36,7 @@ function Contact() {
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit" >Submit enquiry</button>
     </form>
+    </div>
            </section>
         <Footer />
 

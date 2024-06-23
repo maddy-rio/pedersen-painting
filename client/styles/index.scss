@@ -504,20 +504,23 @@ margin: 0 auto;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.833); 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .modal {
-  background-color: black;
-  width: 880px;
-  height: 550px;
-  padding: 50px 80px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
-  position: relative;
+  background-color: transparent;
+  width: 90%; 
+  max-width: 1000px; 
+  height: auto;
+  max-height: 90%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .modal p {
@@ -526,17 +529,7 @@ margin: 0 auto;
 }
 
 .exit-button {
-  border: none;
-  font-size: 24px;
-  width: 10%;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  color: #e6b950;
-  position: absolute;
-  right: 0px;
-  top: 14px;
-  cursor: pointer;
+display: none;
 }
 
 .modal button:hover {
@@ -550,56 +543,57 @@ margin: 0 auto;
 .carousel {
   background-color: transparent;
  position: relative;
- height: 600px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: auto;
  width: 100%;
- margin: 0 auto;
+ max-height: 100%;
 }
+
 .carousel-button img {
- height: 55px;
- width: 60%;
- right: 0;
+ height: 3rem;
+ width: auto;
 }
 
 .carousel-button {
 background-color: transparent;
   position: absolute;
   top: 40%;
-  transform: translateY(-50%);
+margin: 0 auto;
   cursor: pointer;
-z-index: 1100;
+z-index: 1200;
 }
 
 .carousel-button--left {
-  left: -100px;
+  left: -30px;
 }
 
 
 .carousel-button--right {
- right: -100px;
+ right: -30px;
 }
 
 .carousel-container {
-
- height: 100%;
- position:relative;
- overflow: hidden;
+display: flex;
+ width: 100%;
 }
 .carousel-list {
+  display: flex;
  position: relative;
- height: 100%;
+ width: 100%;
  transition: transform 250ms ease-in;
 }
 
 .carousel-slide {
- position: absolute;
- top: 0;
- bottom: 0;
- width: 100%;
+min-width: 100%;
+
 }
 
 .carousel-image {
   width: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 
 
@@ -869,7 +863,11 @@ li a:hover {
   }
 }
 
+
+
 @media only screen and (max-width: 1400px) {
+
+  
 
   // Landing page
 
@@ -915,19 +913,32 @@ li a:hover {
   height: 300px;
   width: 300px;
 }
+
+.work-flex-container img {
+  width: 300px;
+}
 }
 
 @media only screen and (max-width: 1200px) {
 
-  // Work page
-
-  .modal {
-    height: 550px;
-  }
-
   .carousel-button {
-    top: 40%;
-  }
+      top: 45%;
+    }
+    
+    .carousel-button--left {
+      left: -100px;
+    }
+    
+    
+    .carousel-button--right {
+     right: -100px;
+    }
+
+  .carousel-button img {
+    height: 3rem;
+    width: auto;
+   }
+  
 
   .menuItem {
  
@@ -1023,14 +1034,30 @@ li a:hover {
 }
 
 @media only screen and (max-width: 1024px) {
-
+  .carousel-button img {
+    height: 2rem;
+    width: auto;
+   }
+  
 
   .menu {
     padding-top: 3rem;
   }
 
-  .carousel-button {
-    top: 45%;
+
+  .menuItem {
+ font-size: 26px;
+  }
+
+  .menuItem:hover {
+
+    &:after {
+      display: none;
+    }
+  
+    &:not(:hover):after {
+     display: none;
+    }
   }
 }
 
@@ -1044,15 +1071,8 @@ li a:hover {
   }
 
 
-  // Work page
 
-  .modal {
-    height: 480px;
-  }
 
-  .carousel-button {
-    top: 30%;
-  }
 
   // About us page
 
@@ -1131,22 +1151,13 @@ li a:hover {
 @media only screen and (max-width: 768px) {
   
 // Services page
-s
+
 
   .services-text {
     font-size: 16px;
   }
 
 
-  // Work page
-
-  .modal {
-    height: 430px;
-  }
-
-  .carousel-button {
-    top: 30%;
-  }
 
   // About us page
 
@@ -1230,26 +1241,8 @@ s
 .nav-image {
   height: 40px;
 }
-
-// Services page
-
-  .services-text {
-    font-size: 14px;
-  }
-
-  // Work page
-
-  .modal {
-    height: 350px;
-  }
-
-  .exit-button {
-    right: 10px;
-  }
   
-  .carousel-button {
-    top: 20%;
-  }
+
 
   // About us page
 
@@ -1309,26 +1302,12 @@ s
 
 @media only screen and (max-width: 480px) {
 
-// Services page
-
-
-  .services-text {
-    font-size: 12px;
-  }
-
   // Work page
 
-  .modal {
-    height: 350px;
-  }
-
-  .exit-button {
-    right: 10px;
-  }
   
-  .carousel-button {
-    top: 20%;
-  }
+
+
+
 
 
   .about-hr {
@@ -1345,3 +1324,22 @@ s
     font-size: 24px;
 }
 }
+
+@media screen and (max-width: 390px) {
+
+  #landing-page p {
+    font-size: 28px;
+  }
+
+  .hollow-button, .solid-button {
+    width: 160px;
+    font-size: 12px;
+  }
+  
+  .banner {
+    font-size: 32px;
+    width: 380px;
+    height: 180px;
+}
+}
+

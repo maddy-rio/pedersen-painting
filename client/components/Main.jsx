@@ -62,35 +62,32 @@ Elevate your space with our premium services. From residential to commercial pai
      {/* Section 3  */}
      <section id="section3">
   <div class="flex-container">
-    <div class="flex-item">
-      <div class="image-container">
-        <img  src="/Taihape.jpeg" alt="House in Taihape"/>
-        <div class="static-overlay"></div>
+  <div class="flex-item">
+  <div class="image-container" onClick={() => toggleModal(<Carousel4 />)}>
+    <img src="/Taihape.jpeg" alt="House in Taihape"/>
+    <div class="static-overlay"></div>
+    <div class="overlay"></div>
+    <div class="text">Taihape</div>
+  </div>
+</div>
 
-        <div class="overlay"></div>
-        <div onClick={() => toggleModal(<Carousel4 />)} class="overlay"></div>
-        <div class="text">Taihape</div>
-      </div>
-    </div>
+<div class="flex-item">
+  <div class="image-container" onClick={() => toggleModal(<Carousel3 />)}>
+    <img src="/Waimarama.jpeg" alt="House in Waimarama"/>
+    <div class="static-overlay"></div>
+    <div class="overlay"></div>
+    <div class="text">Waimārama</div>
+  </div>
+</div>
+
     <div class="flex-item">
-      <div class="image-container">
-        <img  src="/Waimarama.jpeg" alt="House in Waimarama"/>
-        <div class="static-overlay"></div>
-        <div class="overlay"></div>
-        <div onClick={() => toggleModal(<Carousel3 />)} class="overlay"></div>
-        <div class="text">Waimārama</div>
-      </div>
-    </div>
-    <div class="flex-item">
-      <div class="image-container">
-        <img src="/Edenlane.jpeg" alt="House on Eden Lane"/>
-        <div class="static-overlay"></div>
-        <div class="overlay"></div>
-        <div onClick={() => toggleModal(<Carousel2 />)} class="overlay"></div>
-        <div class="text">Eden Lane</div>
-      </div>
-    </div>
-    
+  <div class="image-container" onClick={() => toggleModal(<Carousel2 />)}>
+    <img src="/Edenlane.jpeg" alt="House on Eden Lane" />
+    <div class="static-overlay"></div>
+    <div class="overlay"></div>
+    <div class="text">Eden Lane</div>
+  </div>
+</div>
   </div>
 </section>
 

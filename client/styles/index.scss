@@ -594,6 +594,7 @@ min-width: 100%;
   width: 100%;
   height: auto;
   object-fit: contain;
+  z-index: 2000;
 }
 
 
@@ -1064,11 +1065,8 @@ li a:hover {
 
 @media only screen and (max-width: 992px) {
 
-  // Nav bar CSS
-
-  .nav-bar {
-    justify-content: start;
-    padding-left: 30px;
+  .nav-image {
+    height: 35px;
   }
 
 
@@ -1236,7 +1234,7 @@ li a:hover {
 // Nav bar 
 
 .nav-image {
-  height: 40px;
+  height: 35px;
 }
   
 

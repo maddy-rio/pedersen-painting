@@ -1,5 +1,29 @@
+import Carousel4 from "./pages/Carousels.jsx/Carousel4"
+import Carousel3 from "./pages/Carousels.jsx/Carousel3"
+import Carousel2 from "./pages/Carousels.jsx/Carousel2"
+import { useState } from "react";
 
 function Main() {
+
+  const [showModal, setShowModal] = useState(false);
+  const [selectedCarousel, setSelectedCarousel] = useState(null);
+
+  const toggleModal = (carouselComponent) => {
+    setSelectedCarousel(carouselComponent);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setSelectedCarousel(null); 
+  };
+
+  const handleOverlayClick = (e) => {
+    if (e.target.classList.contains("modal-overlay")) {
+      closeModal();
+    }
+  };
+
   return (
     <main>
         {/* Landing Page */}
@@ -40,12 +64,11 @@ Elevate your space with our premium services. From residential to commercial pai
   <div class="flex-container">
     <div class="flex-item">
       <div class="image-container">
-    
         <img  src="/Taihape.jpeg" alt="House in Taihape"/>
         <div class="static-overlay"></div>
-        <a href="/work">
+
         <div class="overlay"></div>
-        </a>
+        <div onClick={() => toggleModal(<Carousel4 />)} class="overlay"></div>
         <div class="text">Taihape</div>
       </div>
     </div>
@@ -53,9 +76,8 @@ Elevate your space with our premium services. From residential to commercial pai
       <div class="image-container">
         <img  src="/Waimarama.jpeg" alt="House in Waimarama"/>
         <div class="static-overlay"></div>
-        <a href="/work">
         <div class="overlay"></div>
-        </a>
+        <div onClick={() => toggleModal(<Carousel3 />)} class="overlay"></div>
         <div class="text">Waimārama</div>
       </div>
     </div>
@@ -63,15 +85,23 @@ Elevate your space with our premium services. From residential to commercial pai
       <div class="image-container">
         <img src="/Edenlane.jpeg" alt="House on Eden Lane"/>
         <div class="static-overlay"></div>
-        <a href="/work">
         <div class="overlay"></div>
-        </a>
+        <div onClick={() => toggleModal(<Carousel2 />)} class="overlay"></div>
         <div class="text">Eden Lane</div>
       </div>
     </div>
     
   </div>
 </section>
+
+{showModal && (
+          <div className="modal-overlay" onClick={handleOverlayClick}>
+            <div className="modal">
+              <button className="exit-button" onClick={closeModal}>X</button>
+              {selectedCarousel}
+            </div>
+          </div>
+        )}
 
 
     </main>

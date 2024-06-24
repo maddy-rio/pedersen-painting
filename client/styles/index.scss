@@ -24,11 +24,10 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    top: 0;
+    position: fixed;
     height: 85px;
     background-color: rgb(0, 0, 0);
-  z-index: 1;
+  z-index: 1100;
 }
 
 .nav-image {
@@ -547,8 +546,9 @@ display: none;
  align-items: center;
  justify-content: center;
  height: auto;
- width: 100%;
- max-height: 100%;
+ width: 80%;
+
+ overflow: hidden;
 }
 
 .carousel-button img {
@@ -1064,14 +1064,19 @@ li a:hover {
 
 @media only screen and (max-width: 992px) {
 
+  // Nav bar CSS
+
+  .nav-bar {
+    justify-content: start;
+    padding-left: 30px;
+  }
+
+
   // Services page
 
   .services-text {
     font-size: 18px;
   }
-
-
-
 
 
   // About us page
@@ -1081,12 +1086,6 @@ li a:hover {
     padding: 0 50px;
   }
 
-
-
-
-  
-
- 
 
   // Main page
 
@@ -1098,8 +1097,6 @@ li a:hover {
   .section-header {
       font-size: 28px;
   }
-
-
 
   .text {
       font-size: 28px;

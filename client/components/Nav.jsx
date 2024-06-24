@@ -9,7 +9,7 @@ function Nav() {
 
   // Function to toggle the menu state
   const toggleMenu = () => {
-    setIsMenuOpen(prevState => !prevState); // Toggle the state
+    setIsMenuOpen(prevState => !prevState); 
   };
 
   // Get the current location

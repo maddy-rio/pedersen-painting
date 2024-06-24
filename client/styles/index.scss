@@ -577,6 +577,9 @@ z-index: 1200;
 .carousel-container {
 display: flex;
  width: 100%;
+ overflow-x: scroll;
+ scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 .carousel-list {
   display: flex;
@@ -587,7 +590,7 @@ display: flex;
 
 .carousel-slide {
 min-width: 100%;
-
+scroll-snap-align: start;
 }
 
 .carousel-image {
@@ -741,7 +744,7 @@ font-size: 15px;
 
 #section-footer {
   height: 500px;
-   position: relative;
+  position: relative;
    display: inline-block;
    background-color: #0f0f0f;
    margin: 80px 0 0 0;

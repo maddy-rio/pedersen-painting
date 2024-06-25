@@ -1234,7 +1234,9 @@ li a:hover {
 
 @media only screen and (max-width: 576px) {
 
-
+  .contact-form {
+    min-width: 320px;
+  }
   
 
 

@@ -1155,8 +1155,9 @@ li a:hover {
   #landing-page {
     height: 680px;
     background-image: url(/mobile.jpeg);
-    background-size:cover;
+    background-size:contain;
    background-position: center;
+   background-repeat: no-repeat;
 }
 
 #landing-page::before {

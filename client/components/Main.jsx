@@ -28,8 +28,9 @@ function Main() {
     <main>
         {/* Landing Page */}
         <section id="landing-page">
-       
+  
           <div class="banner">
+          <div class="overlay"></div>
             <p>Crafting Premium Living, One Brushstroke at a Time.</p>
             <button class="hollow-button" onClick={() => window.location.href = '/work'}>View our work</button>
             <button class="solid-button" onClick={() => window.location.href = '/contact'}>Contact us</button>

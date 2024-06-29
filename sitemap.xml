@@ -1,28 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://www.pedersenpainting.co.nz/</loc>
-		<priority>1.00</priority>
-		<lastmod>2024-06-25</lastmod>
-	</url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://pedersenpainting.co.nz/</loc>
+  <lastmod>2024-06-29T05:13:06+00:00</lastmod>
+</url>
 	<url>
 		<loc>https://www.pedersenpainting.co.nz/about</loc>
 		<priority>0.80</priority>
-		<lastmod>2024-06-25</lastmod>
+	<lastmod>2024-06-29T05:13:06+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.pedersenpainting.co.nz/contact</loc>
 		<priority>0.80</priority>
-		<lastmod>2024-06-25</lastmod>
+	<lastmod>2024-06-29T05:13:06+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.pedersenpainting.co.nz/work</loc>
 		<priority>0.80</priority>
-		<lastmod>2024-06-25</lastmod>
+		<lastmod>2024-06-29T05:13:06+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://www.pedersenpainting.co.nz/services</loc>
 		<priority>0.80</priority>
-		<lastmod>2024-06-25</lastmod>
+		<lastmod>2024-06-29T05:13:06+00:00</lastmod>
 	</url>
+
+
 </urlset>

@@ -875,6 +875,8 @@ li a:hover {
 /* Responsive CSS */
 /* Media Queries */
 
+
+
 @media only screen and (min-width: 1600px) {
 
   #landing-page {
@@ -899,15 +901,6 @@ li a:hover {
   #landing-page > * {
     position: relative; 
     z-index: 2; 
-  }
-
-  .services-text, .section-text {
-    
-    margin: 0 100px;
-  }
-
-  #services-left img, #services-right img, #section-left img, #section-right img {
-    margin: 0 100px;
   }
 }
 

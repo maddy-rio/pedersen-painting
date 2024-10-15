@@ -23,12 +23,12 @@ function Main() {
   }
 
   const sectionOneImageVariant = {
-    hidden: { opacity: 0, x: -20 },
+    hidden: { opacity: 0, x: -10 },
     visible: { opacity: 1, x: 0 },
   }
 
   const sectionOneTextVariant = {
-    hidden: { opacity: 0, x: 20 },
+    hidden: { opacity: 0, x: 10 },
     visible: { opacity: 1, x: 0 },
   }
 

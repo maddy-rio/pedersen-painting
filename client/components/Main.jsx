@@ -7,11 +7,28 @@ import { useState } from 'react'
 
 function Main() {
   // Add animation
-  const [hasAnimated, setHasAnimated] = useState(false)
+  // Landing page section
+  const [hasLandingPageAnimated, setHasLandingPageAnimated] = useState(false)
+
+  // Section one
+  const [hasSectionOneImageAnimated, setHasSectionOneImageAnimated] =
+    useState(false)
+  const [hasSectionOneTextAnimated, setHasSectionOneTextAnimated] =
+    useState(false)
 
   // Animation variants
   const landingPageVariant = {
     hidden: { opacity: 0, x: -5 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  const sectionOneImageVariant = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  const sectionOneTextVariant = {
+    hidden: { opacity: 0, x: 20 },
     visible: { opacity: 1, x: 0 },
   }
 
@@ -42,10 +59,10 @@ function Main() {
         variants={landingPageVariant}
         initial="hidden"
         transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.25 }}
-        animate={hasAnimated ? 'visible' : 'hidden'}
+        animate={hasLandingPageAnimated ? 'visible' : 'hidden'}
         onViewportEnter={() => {
-          if (!hasAnimated) {
-            setHasAnimated(true)
+          if (!hasLandingPageAnimated) {
+            setHasLandingPageAnimated(true)
           }
         }}
       >
@@ -54,10 +71,10 @@ function Main() {
           variants={landingPageVariant}
           initial="hidden"
           transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.4 }}
-          animate={hasAnimated ? 'visible' : 'hidden'}
+          animate={hasLandingPageAnimated ? 'visible' : 'hidden'}
           onViewportEnter={() => {
-            if (!hasAnimated) {
-              setHasAnimated(true)
+            if (!hasLandingPageAnimated) {
+              setHasLandingPageAnimated(true)
             }
           }}
         >
@@ -79,12 +96,35 @@ function Main() {
 
       {/* Section 1 */}
       <section id="section-left">
-        <img
-          classname="main-image"
-          src="/waimarama1.jpeg"
-          alt="House in Waimarama's hallway"
-        ></img>
-        <div className="section-text main-image">
+        <motion.div
+          variants={sectionOneImageVariant}
+          initial="hidden"
+          transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.3 }}
+          animate={hasSectionOneImageAnimated ? 'visible' : 'hidden'}
+          onViewportEnter={() => {
+            if (!hasSectionOneImageAnimated) {
+              setHasSectionOneImageAnimated(true)
+            }
+          }}
+        >
+          <img
+            classname="main-image"
+            src="/waimarama1.jpeg"
+            alt="House in Waimarama's hallway"
+          ></img>
+        </motion.div>
+        <motion.div
+          className="section-text main-image"
+          variants={sectionOneTextVariant}
+          initial="hidden"
+          transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.35 }}
+          animate={hasSectionOneTextAnimated ? 'visible' : 'hidden'}
+          onViewportEnter={() => {
+            if (!hasSectionOneTextAnimated) {
+              setHasSectionOneTextAnimated(true)
+            }
+          }}
+        >
           <p className="section-header">WHO WE ARE</p>
           <p>
             Welcome to Pedersen Painting & Decorating, your trusted choice for
@@ -100,7 +140,7 @@ function Main() {
           >
             More about us
           </button>
-        </div>
+        </motion.div>
       </section>
 
       {/*  Section 2  */}

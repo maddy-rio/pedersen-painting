@@ -2,8 +2,8 @@ import Carousel4 from './pages/Carousels.jsx/Carousel4'
 import Carousel3 from './pages/Carousels.jsx/Carousel3'
 import Carousel2 from './pages/Carousels.jsx/Carousel2'
 
-import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { motion, animate, stagger, useInView } from 'framer-motion'
+import { useState, useEffect, useRef } from 'react'
 
 function Main() {
   // Add animation
@@ -22,6 +22,26 @@ function Main() {
   const [hasSectionTwoTextAnimated, setHasSectionTwoTextAnimated] =
     useState(false)
 
+  // Section three
+  const images = useRef(null)
+  const imagesInView = useInView(images)
+
+  useEffect(() => {
+    if (imagesInView) {
+      animate(
+        '.animate-project-image',
+        { opacity: 1, x: 0 },
+        {
+          duration: 0.5,
+          delay: stagger(0.35, { startDelay: 0.1 }),
+          ease: 'circOut',
+        },
+      )
+    } else {
+      animate('.animate-project-image', { opacity: 0, x: -10 }, { duration: 0 })
+    }
+  }, [imagesInView])
+
   // Animation variants
   const landingPageVariant = {
     hidden: { opacity: 0, x: -5 },
@@ -29,22 +49,22 @@ function Main() {
   }
 
   const sectionOneImageVariant = {
-    hidden: { opacity: 0, x: -10 },
+    hidden: { opacity: 0, x: -5 },
     visible: { opacity: 1, x: 0 },
   }
 
   const sectionOneTextVariant = {
-    hidden: { opacity: 0, x: 10 },
+    hidden: { opacity: 0, x: 5 },
     visible: { opacity: 1, x: 0 },
   }
 
   const sectionTwoImageVariant = {
-    hidden: { opacity: 0, x: 10 },
+    hidden: { opacity: 0, x: 5 },
     visible: { opacity: 1, x: 0 },
   }
 
   const sectionTwoTextVariant = {
-    hidden: { opacity: 0, x: -10 },
+    hidden: { opacity: 0, x: -5 },
     visible: { opacity: 1, x: 0 },
   }
 
@@ -208,9 +228,9 @@ function Main() {
       </section>
 
       {/* Section 3  */}
-      <section id="section3">
+      <section id="section3" ref={images}>
         <div className="flex-container">
-          <div className="flex-item">
+          <div className="flex-item animate-project-image">
             <div
               className="image-container"
               onClick={() => toggleModal(<Carousel4 />)}
@@ -229,7 +249,7 @@ function Main() {
             </div>
           </div>
 
-          <div className="flex-item">
+          <div className="flex-item animate-project-image">
             <div
               className="image-container"
               onClick={() => toggleModal(<Carousel3 />)}
@@ -244,11 +264,11 @@ function Main() {
               <img src="/Waimarama.jpeg" alt="House in Waimarama" />
               <div className="static-overlay"></div>
               <div className="overlay"></div>
-              <div name="text">Waimārama</div>
+              <div className="text">Waimārama</div>
             </div>
           </div>
 
-          <div className="flex-item">
+          <div className="flex-item animate-project-image">
             <div
               className="image-container"
               onClick={() => toggleModal(<Carousel2 />)}

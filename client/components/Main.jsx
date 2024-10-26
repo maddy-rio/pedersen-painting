@@ -214,6 +214,13 @@ function Main() {
             <div
               className="image-container"
               onClick={() => toggleModal(<Carousel4 />)}
+              role="button"
+              tabIndex={0}
+              aria-label="Image carousel for Taihape house"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ')
+                  toggleModal(<Carousel4 />)
+              }}
             >
               <img src="/Taihape.jpeg" alt="House in Taihape" />
               <div className="static-overlay"></div>
@@ -226,6 +233,13 @@ function Main() {
             <div
               className="image-container"
               onClick={() => toggleModal(<Carousel3 />)}
+              role="button"
+              tabIndex={0}
+              aria-label="Image carousel for Waimarama house"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ')
+                  toggleModal(<Carousel3 />)
+              }}
             >
               <img src="/Waimarama.jpeg" alt="House in Waimarama" />
               <div className="static-overlay"></div>
@@ -238,6 +252,13 @@ function Main() {
             <div
               className="image-container"
               onClick={() => toggleModal(<Carousel2 />)}
+              role="button"
+              tabIndex={0}
+              aria-label="Image carousel for Eden Lane house"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ')
+                  toggleModal(<Carousel2 />)
+              }}
             >
               <img src="/Edenlane.jpeg" alt="House on Eden Lane" />
               <div className="static-overlay"></div>
@@ -249,14 +270,14 @@ function Main() {
       </section>
 
       {showModal && (
-        <div className="modal-overlay" onClick={handleOverlayClick}>
+        <button className="modal-overlay" onClick={handleOverlayClick}>
           <div className="modal">
             <button className="exit-button" onClick={closeModal}>
               X
             </button>
             {selectedCarousel}
           </div>
-        </div>
+        </button>
       )}
     </main>
   )

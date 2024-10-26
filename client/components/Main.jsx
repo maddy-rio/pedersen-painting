@@ -16,6 +16,12 @@ function Main() {
   const [hasSectionOneTextAnimated, setHasSectionOneTextAnimated] =
     useState(false)
 
+  // Section two
+  const [hasSectionTwoImageAnimated, setHasSectionTwoImageAnimated] =
+    useState(false)
+  const [hasSectionTwoTextAnimated, setHasSectionTwoTextAnimated] =
+    useState(false)
+
   // Animation variants
   const landingPageVariant = {
     hidden: { opacity: 0, x: -5 },
@@ -29,6 +35,16 @@ function Main() {
 
   const sectionOneTextVariant = {
     hidden: { opacity: 0, x: 10 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  const sectionTwoImageVariant = {
+    hidden: { opacity: 0, x: 10 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  const sectionTwoTextVariant = {
+    hidden: { opacity: 0, x: -10 },
     visible: { opacity: 1, x: 0 },
   }
 
@@ -80,13 +96,13 @@ function Main() {
         >
           <p>Crafting Premium Living, One Brushstroke at a Time.</p>
           <button
-            class="hollow-button"
+            className="hollow-button"
             onClick={() => (window.location.href = '/work')}
           >
             View our work
           </button>
           <button
-            class="solid-button"
+            className="solid-button"
             onClick={() => (window.location.href = '/contact')}
           >
             Contact us
@@ -108,7 +124,7 @@ function Main() {
           }}
         >
           <img
-            classname="main-image"
+            // className="main-image"
             src="/waimarama1.jpeg"
             alt="House in Waimarama's hallway"
           ></img>
@@ -128,14 +144,14 @@ function Main() {
           <p className="section-header">WHO WE ARE</p>
           <p>
             Welcome to Pedersen Painting & Decorating, your trusted choice for
-            superior painting solutions in Hawke's Bay. As a family-run
+            superior painting solutions in Hawke&apos;s Bay. As a family-run
             business, we take pride in delivering exceptional results tailored
             to your vision. With a focus on residential new builds and
             partnerships with industry leaders, we promise a premium finish that
             stands the test of time.
           </p>
           <button
-            class="section-button"
+            className="section-button"
             onClick={() => (window.location.href = '/about')}
           >
             More about us
@@ -145,12 +161,35 @@ function Main() {
 
       {/*  Section 2  */}
       <section id="section-right">
-        <img
-          classname="main-image"
-          src="/waimarama2.jpeg"
-          alt="House in Waimarama's bathroom"
-        ></img>
-        <div className="section-text main-image">
+        <motion.div
+          variants={sectionTwoImageVariant}
+          initial="hidden"
+          transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.3 }}
+          animate={hasSectionTwoImageAnimated ? 'visible' : 'hidden'}
+          onViewportEnter={() => {
+            if (!hasSectionTwoImageAnimated) {
+              setHasSectionTwoImageAnimated(true)
+            }
+          }}
+        >
+          <img
+            // className="main-image"
+            src="/waimarama2.jpeg"
+            alt="House in Waimarama's bathroom"
+          ></img>
+        </motion.div>
+        <motion.div
+          className="section-text main-image"
+          variants={sectionTwoTextVariant}
+          initial="hidden"
+          transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.35 }}
+          animate={hasSectionTwoTextAnimated ? 'visible' : 'hidden'}
+          onViewportEnter={() => {
+            if (!hasSectionTwoTextAnimated) {
+              setHasSectionTwoTextAnimated(true)
+            }
+          }}
+        >
           <p className="section-header">OUR SERVICES</p>
           <p>
             Elevate your space with our premium services. From residential to
@@ -160,50 +199,50 @@ function Main() {
             and experience the difference in every project.
           </p>
           <button
-            class="section-button"
+            className="section-button"
             onClick={() => (window.location.href = '/services')}
           >
             View our services
           </button>
-        </div>
+        </motion.div>
       </section>
 
       {/* Section 3  */}
       <section id="section3">
-        <div class="flex-container">
-          <div class="flex-item">
+        <div className="flex-container">
+          <div className="flex-item">
             <div
-              class="image-container"
+              className="image-container"
               onClick={() => toggleModal(<Carousel4 />)}
             >
               <img src="/Taihape.jpeg" alt="House in Taihape" />
-              <div class="static-overlay"></div>
-              <div class="overlay"></div>
-              <div class="text">Taihape</div>
+              <div className="static-overlay"></div>
+              <div className="overlay"></div>
+              <div className="text">Taihape</div>
             </div>
           </div>
 
-          <div class="flex-item">
+          <div className="flex-item">
             <div
-              class="image-container"
+              className="image-container"
               onClick={() => toggleModal(<Carousel3 />)}
             >
               <img src="/Waimarama.jpeg" alt="House in Waimarama" />
-              <div class="static-overlay"></div>
-              <div class="overlay"></div>
-              <div class="text">Waimārama</div>
+              <div className="static-overlay"></div>
+              <div className="overlay"></div>
+              <div name="text">Waimārama</div>
             </div>
           </div>
 
-          <div class="flex-item">
+          <div className="flex-item">
             <div
-              class="image-container"
+              className="image-container"
               onClick={() => toggleModal(<Carousel2 />)}
             >
               <img src="/Edenlane.jpeg" alt="House on Eden Lane" />
-              <div class="static-overlay"></div>
-              <div class="overlay"></div>
-              <div class="text">Eden Lane</div>
+              <div className="static-overlay"></div>
+              <div className="overlay"></div>
+              <div className="text">Eden Lane</div>
             </div>
           </div>
         </div>

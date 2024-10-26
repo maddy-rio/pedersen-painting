@@ -1,48 +1,75 @@
-import React, { useState } from 'react';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import { useLocation } from 'react-router-dom';
+import { useState } from 'react'
+import MenuIcon from '@mui/icons-material/Menu'
+import CloseIcon from '@mui/icons-material/Close'
+import { useLocation } from 'react-router-dom'
 
 function Nav() {
   // State to track whether the menu is open or closed
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   // Function to toggle the menu state
   const toggleMenu = () => {
-    setIsMenuOpen(prevState => !prevState); 
-  };
+    setIsMenuOpen((prevState) => !prevState)
+  }
 
   // Get the current location
-  const location = useLocation();
+  const location = useLocation()
 
   // Define the className based on the route
   // Define the CSS class for the navigation bar image based on the route
-  let navBarClass = 'nav-bar';
-  if (location.pathname === '/about' || location.pathname === '/services' || location.pathname === '/work' || location.pathname === '/contact') {
-    navBarClass += ' special-nav-bar';
+  let navBarClass = 'nav-bar'
+  if (
+    location.pathname === '/about' ||
+    location.pathname === '/services' ||
+    location.pathname === '/work' ||
+    location.pathname === '/contact'
+  ) {
+    navBarClass += ' special-nav-bar'
   }
-
 
   return (
     <section className={navBarClass}>
-      <img onClick={() => window.location.href = '/'} className="nav-image" src="/nav.png" alt="Navigation logo" />
+      <a href="/">
+        <img className="nav-image" src="/nav.png" alt="Navigation logo" />
+      </a>
       <ul className={`menu ${isMenuOpen ? 'showMenu' : ''}`}>
-        <li><a className="menuItem" href="/about">About us</a></li>
-        <li><a className="menuItem" href="/services">Our Services</a></li>
-        <li><a className="menuItem" href="/work">Our work</a></li>
-        <li><a className="menuItem" href="/contact">Contact us</a></li>
+        <li>
+          <a className="menuItem" href="/about">
+            About us
+          </a>
+        </li>
+        <li>
+          <a className="menuItem" href="/services">
+            Our Services
+          </a>
+        </li>
+        <li>
+          <a className="menuItem" href="/work">
+            Our work
+          </a>
+        </li>
+        <li>
+          <a className="menuItem" href="/contact">
+            Contact us
+          </a>
+        </li>
       </ul>
-      <button className="hamburger" onClick={toggleMenu}>
-        <div>
-          {isMenuOpen ? <CloseIcon style={{ fontSize: '45px' }} /> : <MenuIcon style={{ fontSize: '45px' }} />}
-        </div>
+      <button
+        className="hamburger"
+        onClick={toggleMenu}
+        type="button"
+        aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+      >
+        <span>
+          {isMenuOpen ? (
+            <CloseIcon style={{ fontSize: '45px' }} />
+          ) : (
+            <MenuIcon style={{ fontSize: '45px' }} />
+          )}
+        </span>
       </button>
     </section>
-  );
+  )
 }
 
-export default Nav;
-
-
-
-
+export default Nav

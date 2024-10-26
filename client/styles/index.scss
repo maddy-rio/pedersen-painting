@@ -170,6 +170,11 @@ section {
   z-index: 2;
 }
 
+.hero-header {
+  font-size: 40px;
+  font-weight: 100;
+}
+
 .banner {
   background-color: rgba(0, 0, 0, 0.7);
   width: 580px;
@@ -1223,11 +1228,16 @@ li a:hover {
     font-size: 24px;
   }
 
+  .hero-header {
+    font-size: 32px;
+  }
+
   .banner {
     font-size: 32px;
     width: 430px;
     height: 200px;
     margin-bottom: 90px;
+    margin-left: 0rem;
   }
 
   // Contact page
@@ -1258,7 +1268,8 @@ li a:hover {
     font-size: 16px;
   }
 
-  .section-header {
+  .section-header,
+  .hero-header {
     font-size: 24px;
   }
 }

@@ -114,7 +114,9 @@ function Main() {
             }
           }}
         >
-          <p>Crafting Premium Living, One Brushstroke at a Time.</p>
+          <h1 className="hero-header">
+            Crafting Premium Living, One Brushstroke at a Time.
+          </h1>
           <button
             className="hollow-button"
             onClick={() => (window.location.href = '/work')}
@@ -161,7 +163,7 @@ function Main() {
             }
           }}
         >
-          <p className="section-header">WHO WE ARE</p>
+          <h1 className="section-header">WHO WE ARE</h1>
           <p>
             Welcome to Pedersen Painting & Decorating, your trusted choice for
             superior painting solutions in Hawke&apos;s Bay. As a family-run
@@ -210,7 +212,7 @@ function Main() {
             }
           }}
         >
-          <p className="section-header">OUR SERVICES</p>
+          <h1 className="section-header">OUR SERVICES</h1>
           <p>
             Elevate your space with our premium services. From residential to
             commercial painting, we specialize in precision and professionalism.

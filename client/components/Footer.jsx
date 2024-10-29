@@ -1,8 +1,22 @@
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 
-function footer() {
+function Footer() {
+  const [hasAnimated, setHasAnimated] = useState(false)
+
   return (
-    <section id="section-footer">
+    <motion.section
+      id="section-footer"
+      initial={{ opacity: 0, y: -5 }}
+      transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.25 }}
+      animate={hasAnimated ? { y: 0, opacity: 1 } : {}}
+      onViewportEnter={() => {
+        if (!hasAnimated) {
+          setHasAnimated(true)
+        }
+      }}
+    >
       <div className="footer-container">
         <div className="footer-item">
           <h2 className="footer-heading">Services</h2>
@@ -80,8 +94,8 @@ function footer() {
       <div className="footer-text">
         © 2024 Pedersen Painting & Decorating LTD{' '}
       </div>
-    </section>
+    </motion.section>
   )
 }
 
-export default footer
+export default Footer

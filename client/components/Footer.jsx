@@ -21,27 +21,18 @@ function Footer() {
         <div className="footer-item">
           <h2 className="footer-heading">Services</h2>
           <ul>
-            <li>
-              <a href="/services" aria-label="Residential services">
-                Residential
-              </a>
-            </li>
-            <li>
-              <a href="/services" aria-label="Commercial services">
-                Commerical
-              </a>
-            </li>
-            <li>
-              <a href="/services" aria-label="Wallpapering services">
-                Wallpapering
-              </a>
-            </li>
-            <li>
-              <a href="/services" aria-label="Waterblasting services">
-                Waterblasting
-              </a>
-            </li>
+            <li aria-label="Residential services">Residential</li>
+            <li aria-label="Commercial services">Commerical</li>
+            <li aria-label="Wallpapering services">Wallpapering</li>
+            <li aria-label="Waterblasting services">Waterblasting</li>
           </ul>
+          <div className="services-button">
+            <a href="/services">
+              <button aria-label="View our full range of services">
+                View Services
+              </button>
+            </a>
+          </div>
         </div>
         <div className="footer-item">
           <h2 className="footer-heading">Quick Links</h2>

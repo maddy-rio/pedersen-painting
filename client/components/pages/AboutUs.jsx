@@ -1,11 +1,32 @@
 import Nav from '../Nav'
 import Footer from '../Footer'
 
+import { motion } from 'framer-motion'
+import { useState } from 'react'
+
 function AboutUs() {
+  const [hasNewPageAnimated, setHasNewPageAnimated] = useState(false)
+
+  // Animation variants
+  const transitionToNewPageVariant = {
+    hidden: { opacity: 0, y: -10 },
+    visible: { opacity: 1, y: 0 },
+  }
+
   return (
     <>
       <Nav />
-      <section>
+      <motion.section
+        variants={transitionToNewPageVariant}
+        initial="hidden"
+        transition={{ ease: 'linear', duration: 1, delay: 0.25 }}
+        animate={hasNewPageAnimated ? 'visible' : 'hidden'}
+        onViewportEnter={() => {
+          if (!hasNewPageAnimated) {
+            setHasNewPageAnimated(true)
+          }
+        }}
+      >
         <h1 className="about-header">&nbsp;&nbsp;About us</h1>
         <section className="about-us">
           <div>
@@ -87,7 +108,7 @@ function AboutUs() {
           </div>
         </section>
         <Footer />
-      </section>
+      </motion.section>
     </>
   )
 }

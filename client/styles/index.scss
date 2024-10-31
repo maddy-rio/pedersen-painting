@@ -871,6 +871,16 @@ li a:hover {
   padding: 8px 10px;
 }
 
+@media (max-width: 800px) {
+  .services-button button {
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 115px;
+    height: 40px;
+    padding: 8px 10px;
+  }
+}
+
 /* Responsive CSS */
 /* Media Queries */
 

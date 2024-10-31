@@ -9,7 +9,7 @@ function AboutUs() {
 
   // Animation variants
   const transitionToNewPageVariant = {
-    hidden: { opacity: 0, y: -10 },
+    hidden: { opacity: 0, y: -5 },
     visible: { opacity: 1, y: 0 },
   }
 
@@ -62,22 +62,22 @@ function AboutUs() {
             <div className="flex-container">
               <div className="image-container">
                 <div className="about-overlay"></div>
-
                 <img src="/residential.jpeg" alt="Residential building" />
-                <a href="/services">
-                  <div className="overlay"></div>
-                  <div className="about-text">Residential</div>
-                </a>
+                <div
+                  className="overlay no-pointer"
+                  aria-label="Residential services"
+                ></div>
+                <div className="about-text">Residential</div>
               </div>
 
               <div className="image-container">
                 <div className="about-overlay"></div>
-
                 <img src="/commercial.jpeg" alt="Commercial building" />
-                <a href="/services">
-                  <div className="overlay"></div>
-                  <div className="about-text">Commercial</div>
-                </a>
+                <div
+                  className="overlay no-pointer"
+                  aria-label="Commercial services"
+                ></div>
+                <div className="about-text">Commercial</div>
               </div>
 
               <div className="image-container">
@@ -87,23 +87,29 @@ function AboutUs() {
                   src="/wallpaper.jpeg"
                   alt="Wallpaper with gold and black"
                 />
-
-                <a href="/services">
-                  <div className="overlay"></div>
-                  <div className="about-text">Wallpapering</div>
-                </a>
+                <div
+                  className="overlay no-pointer"
+                  aria-label="Wallpapering services"
+                ></div>
+                <div className="about-text">Wallpapering</div>
               </div>
 
               <div className="image-container">
                 <div className="about-overlay"></div>
-
                 <img src="/waterblasting.jpeg" alt="Waterblasting house" />
-
-                <a href="/services">
-                  <div className="overlay"></div>
-                  <div className="about-text">Waterblasting</div>
-                </a>
+                <div
+                  className="overlay no-pointer"
+                  aria-label="Waterblasting services"
+                ></div>
+                <div className="about-text">Waterblasting</div>
               </div>
+            </div>
+            <div className="button-for-services">
+              <a href="/services">
+                <button aria-label="View our full range of services">
+                  View Services
+                </button>
+              </a>
             </div>
           </div>
         </section>

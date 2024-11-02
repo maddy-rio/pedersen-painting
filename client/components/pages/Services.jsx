@@ -10,13 +10,12 @@ function Services() {
 
         {/* Residential */}
         <section id="services-left">
-          <a href="/work">
-            <img
-              className="services-image"
-              src="/services1.jpeg"
-              alt="House in Waimarama's living room"
-            />
-          </a>
+          <img
+            className="services-image"
+            src="/services1.jpeg"
+            alt="House in Waimarama's living room"
+          />
+
           <div className="services-text ">
             <h1 className="section-header">Residential</h1>
             <p>
@@ -32,13 +31,12 @@ function Services() {
 
         {/* Commercial */}
         <section id="services-right">
-          <a href="/work">
-            <img
-              className="services-image"
-              src="/services2.jpeg"
-              alt="Commercial building exterior"
-            />
-          </a>
+          <img
+            className="services-image"
+            src="/services2.jpeg"
+            alt="Commercial building exterior"
+          />
+
           <div className="services-text ">
             <h1 className="section-header">Commercial</h1>
             <p>
@@ -54,13 +52,12 @@ function Services() {
 
         {/* Wallpapering */}
         <section id="services-left">
-          <a href="/work">
-            <img
-              className="services-image"
-              src="/services3.jpeg"
-              alt="House in Waimarama's bathroom"
-            />
-          </a>
+          <img
+            className="services-image"
+            src="/services3.jpeg"
+            alt="House in Waimarama's bathroom"
+          />
+
           <div className="services-text ">
             <h1 className="section-header">Wallpapering</h1>
             <p>
@@ -91,7 +88,13 @@ function Services() {
             </p>
           </div>
         </section>
-
+        <div className="button-for-work">
+          <a href="/work">
+            <button aria-label="View catalogue of our work">
+              View our work
+            </button>
+          </a>
+        </div>
         <Footer />
       </section>
     </>

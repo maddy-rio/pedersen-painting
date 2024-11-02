@@ -107,7 +107,7 @@ function AboutUs() {
             <div className="button-for-services">
               <a href="/services">
                 <button aria-label="View our full range of services">
-                  View Services
+                  View our services
                 </button>
               </a>
             </div>

@@ -683,6 +683,21 @@ section {
   transform: scale(1.02);
 }
 
+.button-for-work button {
+  margin-top: -2rem;
+  background-color: #e6b850;
+  border: 2px solid #e6b850;
+  color: black;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: 180px;
+  height: 40px;
+  padding: 8px 10px;
+  // margin: 40px auto;
+}
+
 // Contact page CSS
 
 .contact-email {

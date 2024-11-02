@@ -1,11 +1,89 @@
 import Nav from '../Nav'
 import Footer from '../Footer'
 
+import { motion } from 'framer-motion'
+import { useState } from 'react'
+
 function Services() {
+  const [hasNewPageAnimated, setHasNewPageAnimated] = useState(false)
+
+  // Residential section
+  const [hasResidentialTextAnimated, setHasResidentialTextAnimated] =
+    useState(false)
+
+  // Commercial section
+  const [hasCommercialImageAnimated, setHasCommercialImageAnimated] =
+    useState(false)
+  const [hasCommercialTextAnimated, setHasCommercialTextAnimated] =
+    useState(false)
+
+  // Wallpapering section
+  const [hasWallpaperImageAnimated, setHasWallpaperImageAnimated] =
+    useState(false)
+  const [hasWallpaperTextAnimated, setHasWallpaperTextAnimated] =
+    useState(false)
+
+  // Waterblasting section
+  const [hasWaterblastingImageAnimated, setHasWaterblastingImageAnimated] =
+    useState(false)
+  const [hasWaterblastingTextAnimated, setHasWaterblastingTextAnimated] =
+    useState(false)
+
+  // Animation variants
+  const transitionToNewPageVariant = {
+    hidden: { opacity: 0, y: -5 },
+    visible: { opacity: 1, y: 0 },
+  }
+
+  const residentialTextVariant = {
+    hidden: { opacity: 0, x: 5 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  const commercialImageVariant = {
+    hidden: { opacity: 0, x: 5 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  const commercialTextVariant = {
+    hidden: { opacity: 0, x: -5 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  const wallpaperImageVariant = {
+    hidden: { opacity: 0, x: -5 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  const wallpaperTextVariant = {
+    hidden: { opacity: 0, x: 5 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  const waterblastingImageVariant = {
+    hidden: { opacity: 0, x: 5 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  const waterblastingTextVariant = {
+    hidden: { opacity: 0, x: -5 },
+    visible: { opacity: 1, x: 0 },
+  }
+
   return (
     <>
-      <section>
-        <Nav />
+      <Nav />
+      <motion.section
+        variants={transitionToNewPageVariant}
+        initial="hidden"
+        transition={{ ease: 'linear', duration: 1, delay: 0.25 }}
+        animate={hasNewPageAnimated ? 'visible' : 'hidden'}
+        onViewportEnter={() => {
+          if (!hasNewPageAnimated) {
+            setHasNewPageAnimated(true)
+          }
+        }}
+      >
         <h1 className="services-header">&nbsp;&nbsp;Services&nbsp;&nbsp;</h1>
 
         {/* Residential */}
@@ -16,7 +94,18 @@ function Services() {
             alt="House in Waimarama's living room"
           />
 
-          <div className="services-text ">
+          <motion.div
+            className="services-text"
+            variants={residentialTextVariant}
+            initial="hidden"
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.35 }}
+            animate={hasResidentialTextAnimated ? 'visible' : 'hidden'}
+            onViewportEnter={() => {
+              if (!hasResidentialTextAnimated) {
+                setHasResidentialTextAnimated(true)
+              }
+            }}
+          >
             <h1 className="section-header">Residential</h1>
             <p>
               Pedersen Painting consults with clients to understand their vision
@@ -26,18 +115,40 @@ function Services() {
               detail work, such as trim and doors. Once painting is complete,
               surfaces are cleaned for a pristine result.
             </p>
-          </div>
+          </motion.div>
         </section>
 
         {/* Commercial */}
         <section id="services-right">
-          <img
-            className="services-image"
-            src="/services2.jpeg"
-            alt="Commercial building exterior"
-          />
-
-          <div className="services-text ">
+          <motion.div
+            variants={commercialImageVariant}
+            initial="hidden"
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.35 }}
+            animate={hasCommercialImageAnimated ? 'visible' : 'hidden'}
+            onViewportEnter={() => {
+              if (!hasCommercialImageAnimated) {
+                setHasCommercialImageAnimated(true)
+              }
+            }}
+          >
+            <img
+              className="services-image"
+              src="/services2.jpeg"
+              alt="Commercial building exterior"
+            />
+          </motion.div>
+          <motion.div
+            className="services-text"
+            variants={commercialTextVariant}
+            initial="hidden"
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.35 }}
+            animate={hasCommercialTextAnimated ? 'visible' : 'hidden'}
+            onViewportEnter={() => {
+              if (!hasCommercialTextAnimated) {
+                setHasCommercialTextAnimated(true)
+              }
+            }}
+          >
             <h1 className="section-header">Commercial</h1>
             <p>
               For commercial projects, Pedersen Painting assesses the space and
@@ -47,18 +158,40 @@ function Services() {
               commercial environments. Quality checks are conducted throughout
               to ensure client satisfaction.
             </p>
-          </div>
+          </motion.div>
         </section>
 
         {/* Wallpapering */}
         <section id="services-left">
-          <img
-            className="services-image"
-            src="/services3.jpeg"
-            alt="House in Waimarama's bathroom"
-          />
-
-          <div className="services-text ">
+          <motion.div
+            variants={wallpaperImageVariant}
+            initial="hidden"
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.35 }}
+            animate={hasWallpaperImageAnimated ? 'visible' : 'hidden'}
+            onViewportEnter={() => {
+              if (!hasWallpaperImageAnimated) {
+                setHasWallpaperImageAnimated(true)
+              }
+            }}
+          >
+            <img
+              className="services-image"
+              src="/services3.jpeg"
+              alt="House in Waimarama's bathroom"
+            />
+          </motion.div>
+          <motion.div
+            className="services-text"
+            variants={wallpaperTextVariant}
+            initial="hidden"
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.35 }}
+            animate={hasWallpaperTextAnimated ? 'visible' : 'hidden'}
+            onViewportEnter={() => {
+              if (!hasWallpaperTextAnimated) {
+                setHasWallpaperTextAnimated(true)
+              }
+            }}
+          >
             <h1 className="section-header">Wallpapering</h1>
             <p>
               Clients collaborate with Pedersen Painting to select the perfect
@@ -67,17 +200,40 @@ function Services() {
               wallpaper, ensuring perfect alignment and smooth seams. Finishing
               touches are completed for a professional result.
             </p>
-          </div>
+          </motion.div>
         </section>
 
         {/* Waterblasting */}
         <section id="services-right">
-          <img
-            className="services-image"
-            src="/services4.jpeg"
-            alt="Waterblasting exterior of house"
-          />
-          <div className="services-text ">
+          <motion.div
+            variants={waterblastingImageVariant}
+            initial="hidden"
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.35 }}
+            animate={hasWaterblastingImageAnimated ? 'visible' : 'hidden'}
+            onViewportEnter={() => {
+              if (!hasWaterblastingImageAnimated) {
+                setHasWaterblastingImageAnimated(true)
+              }
+            }}
+          >
+            <img
+              className="services-image"
+              src="/services4.jpeg"
+              alt="Waterblasting exterior of house"
+            />
+          </motion.div>
+          <motion.div
+            className="services-text"
+            variants={waterblastingTextVariant}
+            initial="hidden"
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.35 }}
+            animate={hasWaterblastingTextAnimated ? 'visible' : 'hidden'}
+            onViewportEnter={() => {
+              if (!hasWaterblastingTextAnimated) {
+                setHasWaterblastingTextAnimated(true)
+              }
+            }}
+          >
             <h1 className="section-header">Waterblasting</h1>
             <p>
               Before painting exterior surfaces, Pedersen Painting uses
@@ -86,7 +242,7 @@ function Services() {
               paint adhesion. Environmental considerations are taken into
               account throughout the process.
             </p>
-          </div>
+          </motion.div>
         </section>
         <div className="button-for-work">
           <a href="/work">
@@ -96,7 +252,7 @@ function Services() {
           </a>
         </div>
         <Footer />
-      </section>
+      </motion.section>
     </>
   )
 }

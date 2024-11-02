@@ -476,6 +476,10 @@ section {
   margin: 40px auto;
 }
 
+.button-for-services button:hover {
+  background-color: #ffcc57;
+  color: black;
+}
 // Our work page CSS
 
 #work-page {
@@ -696,6 +700,11 @@ section {
   height: 40px;
   padding: 8px 10px;
   // margin: 40px auto;
+}
+
+.button-for-work button:hover {
+  background-color: #ffcc57;
+  color: black;
 }
 
 // Contact page CSS

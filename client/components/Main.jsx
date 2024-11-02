@@ -23,6 +23,9 @@ function Main() {
     useState(false)
 
   // Section three
+  const [hasSectionThreeTextAnimated, setHasSectionThreeTextAnimated] =
+    useState(false)
+
   const images = useRef(null)
   const imagesInView = useInView(images)
 
@@ -68,6 +71,11 @@ function Main() {
     visible: { opacity: 1, x: 0 },
   }
 
+  const sectionThreeTextVariant = {
+    hidden: { opacity: 0, y: -5 },
+    visible: { opacity: 1, y: 0 },
+  }
+
   const [showModal, setShowModal] = useState(false)
   const [selectedCarousel, setSelectedCarousel] = useState(null)
 
@@ -94,7 +102,7 @@ function Main() {
         id="landing-page"
         variants={landingPageVariant}
         initial="hidden"
-        transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.25 }}
+        transition={{ ease: 'linear', duration: 0.5, delay: 0.25 }}
         animate={hasLandingPageAnimated ? 'visible' : 'hidden'}
         onViewportEnter={() => {
           if (!hasLandingPageAnimated) {
@@ -106,7 +114,7 @@ function Main() {
           class="banner"
           variants={landingPageVariant}
           initial="hidden"
-          transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.4 }}
+          transition={{ ease: 'linear', duration: 0.5, delay: 0.4 }}
           animate={hasLandingPageAnimated ? 'visible' : 'hidden'}
           onViewportEnter={() => {
             if (!hasLandingPageAnimated) {
@@ -137,7 +145,7 @@ function Main() {
         <motion.div
           variants={sectionOneImageVariant}
           initial="hidden"
-          transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.3 }}
+          transition={{ ease: 'linear', duration: 0.5, delay: 0.3 }}
           animate={hasSectionOneImageAnimated ? 'visible' : 'hidden'}
           onViewportEnter={() => {
             if (!hasSectionOneImageAnimated) {
@@ -155,7 +163,7 @@ function Main() {
           className="section-text main-image"
           variants={sectionOneTextVariant}
           initial="hidden"
-          transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.35 }}
+          transition={{ ease: 'linear', duration: 0.5, delay: 0.35 }}
           animate={hasSectionOneTextAnimated ? 'visible' : 'hidden'}
           onViewportEnter={() => {
             if (!hasSectionOneTextAnimated) {
@@ -186,7 +194,7 @@ function Main() {
         <motion.div
           variants={sectionTwoImageVariant}
           initial="hidden"
-          transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.3 }}
+          transition={{ ease: 'linear', duration: 0.5, delay: 0.3 }}
           animate={hasSectionTwoImageAnimated ? 'visible' : 'hidden'}
           onViewportEnter={() => {
             if (!hasSectionTwoImageAnimated) {
@@ -204,7 +212,7 @@ function Main() {
           className="section-text main-image"
           variants={sectionTwoTextVariant}
           initial="hidden"
-          transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.35 }}
+          transition={{ ease: 'linear', duration: 0.5, delay: 0.35 }}
           animate={hasSectionTwoTextAnimated ? 'visible' : 'hidden'}
           onViewportEnter={() => {
             if (!hasSectionTwoTextAnimated) {
@@ -231,6 +239,20 @@ function Main() {
 
       {/* Section 3  */}
       <section id="section3" ref={images}>
+        <motion.div
+          className="section-header-center"
+          variants={sectionThreeTextVariant}
+          initial="hidden"
+          transition={{ ease: 'linear', duration: 0.5, delay: 0.35 }}
+          animate={hasSectionThreeTextAnimated ? 'visible' : 'hidden'}
+          onViewportEnter={() => {
+            if (!hasSectionThreeTextAnimated) {
+              setHasSectionThreeTextAnimated(true)
+            }
+          }}
+        >
+          <h1 className="section-header">RECENT WORK</h1>
+        </motion.div>
         <div className="flex-container">
           <div className="flex-item animate-project-image">
             <div

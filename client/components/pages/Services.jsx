@@ -87,7 +87,7 @@ function Services() {
         <h1 className="services-header">&nbsp;&nbsp;Services&nbsp;&nbsp;</h1>
 
         {/* Residential */}
-        <section id="services-left">
+        <section id="services-left" aria-labelledby="residential-heading">
           <img
             className="services-image"
             src="/services1.jpeg"
@@ -106,7 +106,9 @@ function Services() {
               }
             }}
           >
-            <h1 className="section-header">Residential</h1>
+            <h1 className="section-header" id="residential-heading">
+              Residential
+            </h1>
             <p>
               Pedersen Painting consults with clients to understand their vision
               and preferences. Surfaces are prepared by cleaning, sanding, and
@@ -119,7 +121,7 @@ function Services() {
         </section>
 
         {/* Commercial */}
-        <section id="services-right">
+        <section id="services-right" aria-labelledby="commercial-heading">
           <motion.div
             variants={commercialImageVariant}
             initial="hidden"
@@ -149,7 +151,9 @@ function Services() {
               }
             }}
           >
-            <h1 className="section-header">Commercial</h1>
+            <h1 className="section-header" id="commercial-heading">
+              Commercial
+            </h1>
             <p>
               For commercial projects, Pedersen Painting assesses the space and
               plans the painting process accordingly. Surfaces are prepared
@@ -162,7 +166,7 @@ function Services() {
         </section>
 
         {/* Wallpapering */}
-        <section id="services-left">
+        <section id="services-left" aria-labelledby="wallpapering-heading">
           <motion.div
             variants={wallpaperImageVariant}
             initial="hidden"
@@ -192,7 +196,9 @@ function Services() {
               }
             }}
           >
-            <h1 className="section-header">Wallpapering</h1>
+            <h1 className="section-header" id="wallpapering-heading">
+              Wallpapering
+            </h1>
             <p>
               Clients collaborate with Pedersen Painting to select the perfect
               wallpaper design. Walls are cleaned, smoothed, and primed for
@@ -204,7 +210,7 @@ function Services() {
         </section>
 
         {/* Waterblasting */}
-        <section id="services-right">
+        <section id="services-right" aria-labelledby="waterblasting-heading">
           <motion.div
             variants={waterblastingImageVariant}
             initial="hidden"
@@ -234,7 +240,9 @@ function Services() {
               }
             }}
           >
-            <h1 className="section-header">Waterblasting</h1>
+            <h1 className="section-header" id="waterblasting-heading">
+              Waterblasting
+            </h1>
             <p>
               Before painting exterior surfaces, Pedersen Painting uses
               waterblasting to clean and prepare the area. This process removes

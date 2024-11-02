@@ -18,7 +18,7 @@ function Services() {
             />
           </a>
           <div className="services-text ">
-            <p className="section-header">Residential</p>
+            <h1 className="section-header">Residential</h1>
             <p>
               Pedersen Painting consults with clients to understand their vision
               and preferences. Surfaces are prepared by cleaning, sanding, and
@@ -40,7 +40,7 @@ function Services() {
             />
           </a>
           <div className="services-text ">
-            <p className="section-header">Commercial</p>
+            <h1 className="section-header">Commercial</h1>
             <p>
               For commercial projects, Pedersen Painting assesses the space and
               plans the painting process accordingly. Surfaces are prepared
@@ -62,7 +62,7 @@ function Services() {
             />
           </a>
           <div className="services-text ">
-            <p className="section-header">Wallpapering</p>
+            <h1 className="section-header">Wallpapering</h1>
             <p>
               Clients collaborate with Pedersen Painting to select the perfect
               wallpaper design. Walls are cleaned, smoothed, and primed for
@@ -81,7 +81,7 @@ function Services() {
             alt="Waterblasting exterior of house"
           />
           <div className="services-text ">
-            <p className="section-header">Waterblasting</p>
+            <h1 className="section-header">Waterblasting</h1>
             <p>
               Before painting exterior surfaces, Pedersen Painting uses
               waterblasting to clean and prepare the area. This process removes

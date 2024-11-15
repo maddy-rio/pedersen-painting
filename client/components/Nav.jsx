@@ -29,9 +29,12 @@ function Nav() {
 
   return (
     <section className={navBarClass}>
-      <a href="/">
-        <img className="nav-image" src="/nav.png" alt="Navigation logo" />
-      </a>
+      <img
+        onClick={() => (window.location.href = '/')}
+        className="nav-image"
+        src="/nav.png"
+        alt="Navigation logo"
+      />
       <ul className={`menu ${isMenuOpen ? 'showMenu' : ''}`}>
         <li>
           <a className="menuItem" href="/about">

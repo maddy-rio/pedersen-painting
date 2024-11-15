@@ -337,7 +337,9 @@ section {
 
 .image-container {
   position: relative;
-  display: inline-block;
+  flex: 1 1 45%;
+  max-width: 100%;
+  box-sizing: border-box;
   margin: 10px;
 }
 
@@ -392,7 +394,7 @@ section {
 // About page CSS
 
 #about-section {
-  padding: 25px 0;
+  padding: 50px 0;
 }
 
 .about-header {
@@ -400,7 +402,6 @@ section {
   font-family: 'Forum', cursive;
   border-bottom: 2px solid #e6b850;
   padding-bottom: 5px;
-  padding-right: 15px;
   margin: 100px 0 60px 0;
   display: inline-block;
 }

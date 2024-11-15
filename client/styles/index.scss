@@ -337,8 +337,8 @@ section {
 
 .image-container {
   position: relative;
-  flex: 1 1 45%;
-  max-width: 100%;
+  flex: 1 1 45%; /* Ensures two items per row */
+  max-width: 100%; /* Ensures they don't exceed half the row */
   box-sizing: border-box;
   margin: 10px;
 }
@@ -690,26 +690,6 @@ section {
 #services-left img:hover,
 #services-right img:hover {
   transform: scale(1.02);
-}
-
-.button-for-work button {
-  margin-top: -2rem;
-  background-color: #e6b850;
-  border: 2px solid #e6b850;
-  color: black;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 1px;
-  width: 180px;
-  height: 40px;
-  padding: 8px 10px;
-  // margin: 40px auto;
-}
-
-.button-for-work button:hover {
-  background-color: #ffcc57;
-  color: black;
 }
 
 // Contact page CSS

@@ -88,12 +88,13 @@ function Services() {
 
         {/* Residential */}
         <section id="services-left" aria-labelledby="residential-heading">
-          <img
-            className="services-image"
-            src="/services1.jpeg"
-            alt="House in Waimarama's living room"
-          />
-
+          <a href="/work">
+            <img
+              className="services-image"
+              src="/services1.jpeg"
+              alt="House in Waimarama's living room"
+            />
+          </a>
           <motion.div
             className="services-text"
             variants={residentialTextVariant}
@@ -133,11 +134,13 @@ function Services() {
               }
             }}
           >
-            <img
-              className="services-image"
-              src="/services2.jpeg"
-              alt="Commercial building exterior"
-            />
+            <a href="/work">
+              <img
+                className="services-image"
+                src="/services2.jpeg"
+                alt="Commercial building exterior"
+              />
+            </a>
           </motion.div>
           <motion.div
             className="services-text"
@@ -178,11 +181,13 @@ function Services() {
               }
             }}
           >
-            <img
-              className="services-image"
-              src="/services3.jpeg"
-              alt="House in Waimarama's bathroom"
-            />
+            <a href="/work">
+              <img
+                className="services-image"
+                src="/services3.jpeg"
+                alt="House in Waimarama's bathroom"
+              />
+            </a>
           </motion.div>
           <motion.div
             className="services-text"
@@ -252,13 +257,6 @@ function Services() {
             </p>
           </motion.div>
         </section>
-        <div className="button-for-work">
-          <a href="/work">
-            <button aria-label="View catalogue of our work">
-              View our work
-            </button>
-          </a>
-        </div>
         <Footer />
       </motion.section>
     </>

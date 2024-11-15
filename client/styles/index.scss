@@ -445,7 +445,7 @@ section {
   font-weight: bold;
 }
 
-.image-container:hover .no-pointer {
+.image-container:hover {
   cursor: default;
 }
 
@@ -467,25 +467,6 @@ section {
   margin: 20px auto;
 }
 
-.button-for-services button {
-  margin-top: 2rem;
-  background-color: #e6b850;
-  border: 2px solid #e6b850;
-  color: black;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 1px;
-  width: 180px;
-  height: 40px;
-  padding: 8px 10px;
-  margin: 40px auto;
-}
-
-.button-for-services button:hover {
-  background-color: #ffcc57;
-  color: black;
-}
 // Our work page CSS
 
 #work-page {

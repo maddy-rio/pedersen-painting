@@ -63,53 +63,53 @@ function AboutUs() {
               <div className="image-container">
                 <div className="about-overlay"></div>
                 <img src="/residential.jpeg" alt="Residential building" />
-                <div
-                  className="overlay no-pointer"
-                  aria-label="Residential services"
-                ></div>
+                <a href="/services">
+                  <div
+                    className="overlay"
+                    aria-label="Residential services"
+                  ></div>
+                </a>
                 <div className="about-text">Residential</div>
               </div>
 
               <div className="image-container">
                 <div className="about-overlay"></div>
                 <img src="/commercial.jpeg" alt="Commercial building" />
-                <div
-                  className="overlay no-pointer"
-                  aria-label="Commercial services"
-                ></div>
+                <a href="/services">
+                  <div
+                    className="overlay"
+                    aria-label="Commercial services"
+                  ></div>
+                </a>
                 <div className="about-text">Commercial</div>
               </div>
 
               <div className="image-container">
                 <div className="about-overlay"></div>
-
                 <img
                   src="/wallpaper.jpeg"
                   alt="Wallpaper with gold and black"
                 />
-                <div
-                  className="overlay no-pointer"
-                  aria-label="Wallpapering services"
-                ></div>
+                <a href="/services">
+                  <div
+                    className="overlay"
+                    aria-label="Wallpapering services"
+                  ></div>
+                </a>
                 <div className="about-text">Wallpapering</div>
               </div>
 
               <div className="image-container">
                 <div className="about-overlay"></div>
                 <img src="/waterblasting.jpeg" alt="Waterblasting house" />
-                <div
-                  className="overlay no-pointer"
-                  aria-label="Waterblasting services"
-                ></div>
+                <a href="/services">
+                  <div
+                    className="overlay"
+                    aria-label="Waterblasting services"
+                  ></div>
+                </a>
                 <div className="about-text">Waterblasting</div>
               </div>
-            </div>
-            <div className="button-for-services">
-              <a href="/services">
-                <button aria-label="View our full range of services">
-                  View our services
-                </button>
-              </a>
             </div>
           </div>
         </section>

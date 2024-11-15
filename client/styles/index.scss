@@ -182,7 +182,7 @@ section {
 }
 
 .banner {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.79);
   width: 580px;
   height: 200px;
   font-family: 'Forum', cursive;
@@ -191,8 +191,7 @@ section {
   color: #e6b850;
   display: block;
   padding: 20px 5px;
-  margin-left: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
 }
 
 .hollow-button {
@@ -318,7 +317,7 @@ section {
 // Section 3 CSS
 
 #section3 {
-  // padding: 120px 0;
+  padding: 120px 0;
   margin: 0;
   height: auto;
 }
@@ -332,14 +331,13 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  gap: 50px;
   margin: 0 auto;
 }
 
 .image-container {
   position: relative;
-  flex: 1 1 45%; /* Ensures two items per row */
-  max-width: 100%; /* Ensures they don't exceed half the row */
-  box-sizing: border-box;
+  display: inline-block;
   margin: 10px;
 }
 

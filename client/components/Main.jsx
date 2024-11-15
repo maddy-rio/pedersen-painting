@@ -22,10 +22,6 @@ function Main() {
   const [hasSectionTwoTextAnimated, setHasSectionTwoTextAnimated] =
     useState(false)
 
-  // Section three
-  const [hasSectionThreeTextAnimated, setHasSectionThreeTextAnimated] =
-    useState(false)
-
   const images = useRef(null)
   const imagesInView = useInView(images)
 
@@ -69,11 +65,6 @@ function Main() {
   const sectionTwoTextVariant = {
     hidden: { opacity: 0, x: -5 },
     visible: { opacity: 1, x: 0 },
-  }
-
-  const sectionThreeTextVariant = {
-    hidden: { opacity: 0, y: -5 },
-    visible: { opacity: 1, y: 0 },
   }
 
   const [showModal, setShowModal] = useState(false)
@@ -239,20 +230,6 @@ function Main() {
 
       {/* Section 3  */}
       <section id="section3" ref={images}>
-        <motion.div
-          className="section-header-center"
-          variants={sectionThreeTextVariant}
-          initial="hidden"
-          transition={{ ease: 'linear', duration: 0.5, delay: 0.35 }}
-          animate={hasSectionThreeTextAnimated ? 'visible' : 'hidden'}
-          onViewportEnter={() => {
-            if (!hasSectionThreeTextAnimated) {
-              setHasSectionThreeTextAnimated(true)
-            }
-          }}
-        >
-          <h1 className="section-header">RECENT WORK</h1>
-        </motion.div>
         <div className="flex-container">
           <div className="flex-item animate-project-image">
             <div

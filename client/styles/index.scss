@@ -2,13 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
 
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: #e6b850;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #e6b850;
   background-color: rgb(0, 0, 0);
 }
 
@@ -17,220 +22,211 @@ h1 {
   text-align: center;
 }
 
-
-
 /* Nav bar CSS */
 .nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    height: 85px;
-    background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 85px;
+  background-color: rgb(0, 0, 0);
   z-index: 1100;
 }
 
 .nav-image {
-    height: 50px;
-cursor: pointer;
+  height: 50px;
+  cursor: pointer;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-    // Routes nav bar CSS
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .special-nav-bar {
-display: flex;
-align-items: center;
-justify-content: start;
-padding-left: 30px;
-background-color: rgba(0, 0, 0, 0.719);
-position: fixed;
-z-index: 1100;
-    }
-  
+// Routes nav bar CSS
 
-  /*  Sidebar menu CSS */
-  .menuItem {
-    display: flex;
-    justify-content: center;
-    font-size: 1.8rem;
-    color: #e6b850;
-    text-decoration: none;
+.special-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 30px;
+  background-color: rgba(0, 0, 0, 0.719);
+  position: fixed;
+  z-index: 1100;
+}
 
+/*  Sidebar menu CSS */
+.menuItem {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #e6b850;
+  text-decoration: none;
+}
+
+.menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  padding: 0 50px;
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: #e6b850;
+    height: 3px;
+    width: 0;
+    bottom: -6px;
+    transition:
+      width 0.4s ease,
+      left 0.4s ease;
   }
-  
-  .menuItem {
-    display: block;
-    margin: 2rem 4rem;
-    font-size: 1.8rem;
-        cursor: pointer;
-        position: relative;
-        text-decoration: none;
-        letter-spacing: 0.5px;
-        padding: 0 50px;
-        &:after {
-          content: "";
-          position: absolute;
-          background-color: #e6b850;
-          height: 3px;
-          width: 0;
-          bottom: -6px;
-          transition: width 0.4s ease, left 0.4s ease;
-        }
-        &:hover:after {
-            width: 12%; 
-            left: calc((100% - 12%) / 2);
-        }
-      
-        &:not(:hover):after {
-          width: 0; 
-          left: 50%; 
-        }
+  &:hover:after {
+    width: 12%;
+    left: calc((100% - 12%) / 2);
   }
-  
-  
-  .hamburger {
-    position: fixed;
-    z-index: 1100;
-    right: 0rem;
-    padding: 20px;
+
+  &:not(:hover):after {
+    width: 0;
+    left: 50%;
+  }
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 1100;
+  right: 0rem;
+  padding: 20px;
   background-color: transparent;
-    color: #e6b850;
-    cursor: pointer;
-  }
-  
+  color: #e6b850;
+  cursor: pointer;
+}
 
-  
-  .menu {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.5s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.933);
-    color: #e6b850;
-    list-style: none;
-    padding-top: 4rem;
-  }
-  
-  .showMenu {
-    transform: translateY(0);
-  }
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.933);
+  color: #e6b850;
+  list-style: none;
+  padding-top: 4rem;
+}
 
-
-
-
+.showMenu {
+  transform: translateY(0);
+}
 
 /* Button CSS */
 
 button {
-    background-color: #E8D7CE;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 4px 2px;
-    cursor: pointer;
-
+  background-color: #e8d7ce;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-
 
 /* Section CSS */
 
 section {
-    text-align: center;
-    height: 560px;
-    width: 100%;
+  text-align: center;
+  height: 560px;
+  width: 100%;
 }
-
 
 /* Landing Page */
 #landing-page {
-    height: 680px;
-    background-image: url(/desktop.jpeg);
-    background-size:cover;
-    background-repeat: no-repeat;
-   background-position: center;
-   
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 0 0 80px 0;
+  height: 680px;
+  background-image: url(/desktop.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 0 80px 0;
 }
 
 #landing-page::before {
-  content: ''; 
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 680px;
-  background-color: rgba(0, 0, 0, 0.2); 
-  z-index: 1; 
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 #landing-page > * {
-  position: relative; 
-  z-index: 2; 
+  position: relative;
+  z-index: 2;
 }
 
+.hero-header {
+  font-size: 40px;
+  font-weight: 100;
+}
 
 .banner {
-    background-color: rgba(0, 0, 0, 0.790);
-    width: 580px;
-    height: 200px;
-    font-family: 'Forum', cursive;
-    letter-spacing: 0.2px;
-    font-size: 40px;
-    color: #e6b850;
-    display: block;
- padding: 20px 5px;
-margin-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.79);
+  width: 580px;
+  height: 200px;
+  font-family: 'Forum', cursive;
+  letter-spacing: 0.2px;
+  font-size: 40px;
+  color: #e6b850;
+  display: block;
+  padding: 20px 5px;
+  margin-bottom: 50px;
 }
 
- .hollow-button {
-border: 2px solid #e6b850;
-background-color: transparent;
-color: #e6b850;
-font-family: 'DM Sans', sans-serif;
-font-weight: 300;
-font-size: 14px;
-letter-spacing: 1px;
-padding: 8px 30px;
-width: 180px;
+.hollow-button {
+  border: 2px solid #e6b850;
+  background-color: transparent;
+  color: #e6b850;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 8px 30px;
+  width: 180px;
 }
 
 .hollow-button:hover {
-    border: 3px solid  #ffcc57;
-    color:  #ffcc57;
+  border: 3px solid #ffcc57;
+  color: #ffcc57;
 }
 
 .solid-button {
-    border: 2px solid #e6b850;
-    background-color: #e6b850;
-    color: black;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 1px;
-    padding: 8px 30px;
-    margin: 25px 0 0 5px;
-    width: 180px;
+  border: 2px solid #e6b850;
+  background-color: #e6b850;
+  color: black;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 8px 30px;
+  margin: 25px 0 0 5px;
+  width: 180px;
 }
 
 .solid-button:hover {
-    background-color:  #ffcc57;
-   border: 2px solid #ffcc57;
+  background-color: #ffcc57;
+  border: 2px solid #ffcc57;
 }
 
 section {
@@ -238,22 +234,21 @@ section {
 }
 
 .section-button {
-  background-color:  #e6b850;
+  background-color: #e6b850;
   border: 2px solid #e6b850;
   color: black;
-font-family: 'DM Sans', sans-serif;
-font-weight: 300;
-font-size: 14px;
-letter-spacing: 1px;
-width: 180px;
-height: 40px;
-padding: 8px 10px;
-margin: 40px auto;
-
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: 180px;
+  height: 40px;
+  padding: 8px 10px;
+  margin: 40px auto;
 }
 
 .section-button:hover {
-  background-color:  #ffcc57;
+  background-color: #ffcc57;
   color: black;
 }
 
@@ -273,37 +268,35 @@ margin: 40px auto;
   margin: 100px 0 0 0;
 }
 
-
-
 #section-left {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   font-family: 'Forum', cursive;
-  color:#e6b850;
+  color: #e6b850;
   padding: 100px 150px;
-
 }
 
-
-
- .main-image{
+.main-image {
   flex: 1 1 50%;
   box-sizing: border-box;
- padding: 0 80px;
+  padding: 0 80px;
 }
-
-
-
-
 
 #section-right {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   font-family: 'Forum', cursive;
-  color:#e6b850;
-  padding: 50px 150px;              
+  color: #e6b850;
+  padding: 50px 150px;
+}
+
+.section-header-center {
+  // margin-top: 2rem;
+  text-align: center;
+  font-family: 'Forum', cursive;
+  color: #e6b850;
 }
 
 #section-left img {
@@ -311,15 +304,14 @@ margin: 40px auto;
   transition: transform 0.3s ease-in-out;
 }
 
-
-#section-right img{
+#section-right img {
   height: 480px;
   transition: transform 0.3s ease-in-out;
 }
 
-#section-left img:hover, #section-right img:hover {
+#section-left img:hover,
+#section-right img:hover {
   transform: scale(1.02);
-
 }
 
 // Section 3 CSS
@@ -327,28 +319,27 @@ margin: 40px auto;
 #section3 {
   padding: 120px 0;
   margin: 0;
-height: auto;
+  height: auto;
 }
 
 #section3 img {
-    width: 350px;
+  width: 350px;
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-   justify-content: center;
-   align-content: center;
-   gap: 50px; 
- margin: 0 auto;
- 
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+  margin: 0 auto;
 }
-
-
 
 .image-container {
   position: relative;
-  display: inline-block;
+  flex: 1 1 45%; /* Ensures two items per row */
+  max-width: 100%; /* Ensures they don't exceed half the row */
+  box-sizing: border-box;
   margin: 10px;
 }
 
@@ -360,7 +351,6 @@ height: auto;
   height: 20%;
   background-color: #000000c3;
   opacity: 1;
-
 }
 
 .overlay {
@@ -369,7 +359,7 @@ height: auto;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:#e6b950b2;
+  background-color: #e6b950b2;
   opacity: 0;
   transition: opacity 0.9s ease;
 }
@@ -380,20 +370,20 @@ height: auto;
 }
 
 .flex-item img {
-  display: block; 
+  display: block;
 }
 
 .text {
   position: absolute;
-  top: 90%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  color:#e6b950c6;
-  font-size: 35px; 
-  
- font-family: "Forum", cursive;
-  text-align: center; 
-  pointer-events: none; 
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e6b950c6;
+  font-size: 35px;
+
+  font-family: 'Forum', cursive;
+  text-align: center;
+  pointer-events: none;
 }
 
 .image-container:hover .text {
@@ -403,14 +393,13 @@ height: auto;
 
 // About page CSS
 
-
 #about-section {
-  padding: 50px 0;  
+  padding: 50px 0;
 }
 
 .about-header {
   font-size: 42px;
-  font-family: "Forum", cursive;
+  font-family: 'Forum', cursive;
   border-bottom: 2px solid #e6b850;
   padding-bottom: 5px;
   margin: 100px 0 60px 0;
@@ -421,25 +410,24 @@ height: auto;
   height: auto;
   text-align: center;
   font-size: 22px;
-  font-family: "Forum", cursive;
+  font-family: 'Forum', cursive;
 }
 
 .about-us p {
   padding: 0 50px;
 }
 
-
 .about-text {
   position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  color:#e6b950c6;
-  font-size: 35px; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e6b950c6;
+  font-size: 35px;
   font-weight: bold;
- font-family: "Forum", cursive;
-  text-align: end; 
-  pointer-events: none; 
+  font-family: 'Forum', cursive;
+  text-align: end;
+  pointer-events: none;
 }
 
 .about-overlay {
@@ -457,38 +445,41 @@ height: auto;
   font-weight: bold;
 }
 
+.image-container:hover {
+  cursor: default;
+}
+
 #about-section img {
-  display: block; 
-  width: 280px;
-  height: 260px;
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 #about-section .flex-container {
-  gap: 30px;
+  gap: 15px;
 }
- 
+
 .about-hr {
   border: 2px solid #e6b850;
   margin: 0 auto;
   width: 80%;
-margin: 20px auto;
+  margin: 20px auto;
 }
-
-
 
 // Our work page CSS
 
 #work-page {
   margin: 0;
   padding: 0;
-height: auto;
-padding: 50px;
+  height: auto;
+  padding: 50px;
 }
 
 #work-page h1 {
   font-size: 36px;
-  font-family: "Forum", cursive;
-  padding-bottom:60px;
+  font-family: 'Forum', cursive;
+  padding-bottom: 60px;
 }
 
 #work-section {
@@ -496,33 +487,30 @@ padding: 50px;
   height: auto;
 }
 
-
 .work-flex-container {
   display: flex;
- flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  gap: 20px; 
-max-width: 1600px;
-padding: 0 50px;
-margin: 0 auto;
+  gap: 20px;
+  max-width: 1600px;
+  padding: 0 50px;
+  margin: 0 auto;
 }
 
 .work-flex-container img {
   width: 340px;
 }
 
-
 // Modal CSS
-
 
 .modal-overlay {
   position: fixed;
-  top: 0;
+  top: 5%;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.833); 
+  background-color: rgba(0, 0, 0, 0.833);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -530,10 +518,10 @@ margin: 0 auto;
 
 .modal {
   background-color: transparent;
-  width: 90%; 
-  max-width: 1000px; 
+  width: 90%;
+  max-width: 1000px;
   height: auto;
-  max-height: 90%; 
+  max-height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -543,73 +531,68 @@ margin: 0 auto;
 
 .modal p {
   font-size: 15px;
-  
 }
 
 .exit-button {
-display: none;
+  display: none;
 }
 
 .modal button:hover {
   font-weight: bold;
 }
 
-
-
 // Carousel CSS
 
 .carousel {
   background-color: transparent;
- position: relative;
- display: flex;
- align-items: center;
- justify-content: center;
- height: auto;
- width: 95%;
-
- overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 95%;
+  overflow: hidden;
 }
 
 .carousel-button img {
- height: 3rem;
- width: auto;
+  height: 3rem;
+  width: auto;
 }
 
 .carousel-button {
-background-color: transparent;
+  background-color: transparent;
   position: absolute;
   top: 40%;
-margin: 0 auto;
+  margin: 0 auto;
   cursor: pointer;
-z-index: 1200;
+  z-index: 1200;
 }
 
 .carousel-button--left {
   left: -30px;
 }
 
-
 .carousel-button--right {
- right: -30px;
+  right: -30px;
 }
 
 .carousel-container {
-display: flex;
- width: 100%;
- overflow-x: scroll;
- scroll-snap-type: x mandatory;
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
 .carousel-list {
   display: flex;
- position: relative;
- width: 100%;
- transition: transform 250ms ease-in;
+  position: relative;
+  width: 100%;
+  transition: transform 250ms ease-in;
 }
 
 .carousel-slide {
-min-width: 100%;
-scroll-snap-align: start;
+  min-width: 100%;
+  scroll-snap-align: start;
 }
 
 .carousel-image {
@@ -619,65 +602,58 @@ scroll-snap-align: start;
   z-index: 2000;
 }
 
-
-
 // Header CSS for all pages
 
 .page-header {
-  
   font-size: 42px;
-  font-family: "Forum", cursive;
- border-bottom: 2px solid #e6b850;
- padding-bottom: 5px;
- margin: 100px 0 35px 0;
- display: inline-block;
+  font-family: 'Forum', cursive;
+  border-bottom: 2px solid #e6b850;
+  padding-bottom: 5px;
+  margin: 100px 0 35px 0;
+  display: inline-block;
 }
 
 // Services page CSS
 
 .services-header {
   font-size: 42px;
-  font-family: "Forum", cursive;
- border-bottom: 2px solid #e6b850;
- padding-bottom: 5px;
- margin: 100px 0 35px 0;
- display: inline-block;
+  font-family: 'Forum', cursive;
+  border-bottom: 2px solid #e6b850;
+  padding-bottom: 5px;
+  margin: 100px 0 35px 0;
+  display: inline-block;
 }
 
 .services-text {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   font-size: 22px;
   line-height: 1.6;
   margin: 0 100px;
 }
-
 
 #services-left {
   display: flex;
   flex-direction: row;
   // flex-wrap: wrap;
   font-family: 'Forum', cursive;
-  color:#e6b850;
+  color: #e6b850;
   padding: 100px 150px;
-
 }
 
- .services-image{
+.services-image {
   flex: 1 1 50%;
   box-sizing: border-box;
- 
 }
-
 
 #services-right {
   display: flex;
   flex-direction: row-reverse;
   // flex-wrap: wrap;
   font-family: 'Forum', cursive;
-  color:#e6b850;
-  padding: 50px 150px;              
+  color: #e6b850;
+  padding: 50px 150px;
 }
 
 #services-left img {
@@ -686,16 +662,15 @@ scroll-snap-align: start;
   transition: transform 0.3s ease-in-out;
 }
 
-
-#services-right img{
+#services-right img {
   height: 400px;
   width: 400px;
   transition: transform 0.3s ease-in-out;
 }
 
-#services-left img:hover, #services-right img:hover {
+#services-left img:hover,
+#services-right img:hover {
   transform: scale(1.02);
-
 }
 
 // Contact page CSS
@@ -707,7 +682,7 @@ scroll-snap-align: start;
 }
 
 .contact-email:hover {
-  color:white;
+  color: white;
 }
 
 .contact-container {
@@ -723,50 +698,59 @@ scroll-snap-align: start;
   flex-direction: column;
   justify-content: center;
   font-size: 22px;
- padding: 50px 0 80px 0;
- margin: 0 auto;
- flex-grow: 1;       
- flex-shrink: 1;     
- flex-basis: 400px; 
- max-width: 650px;
- min-width: 420px;
+  padding: 50px 0 80px 0;
+  margin: 0 auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 400px;
+  max-width: 650px;
+  min-width: 420px;
 }
 
-.contact-form input, .contact-form textarea {
-  
-border: 2px solid #e6b850;
-padding: 15px;
-margin-bottom: 10px;
-background-color: #0000006c;
-color:white;
-font-family: "DM Sans", sans-serif;
-font-size: 15px;
+.contact-form input,
+.contact-form textarea {
+  border: 2px solid #e6b850;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #0000006c;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
 }
 
 .contact-form button {
-  
   border: 2px solid #e6b850;
   padding: 15px;
   background-color: #e6b850;
   color: black;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .contact-form button:hover {
-  background-color:  #ffcc57;
+  background-color: #ffcc57;
   color: black;
   cursor: pointer;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 // Footer CSS
 
 #section-footer {
   height: 500px;
   position: relative;
-   display: inline-block;
-   background-color: #0f0f0f;
-   margin: 80px 0 0 0;
+  display: inline-block;
+  background-color: #0f0f0f;
+  margin: 80px 0 0 0;
 }
 
 .footer-overlay {
@@ -781,44 +765,45 @@ font-size: 15px;
 
 .footer-text {
   position: absolute;
-  top: 90%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  color:#000000c6;
-  font-size: 18px; 
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000c6;
+  font-size: 18px;
   font-weight: 200;
- font-family: "DM Sans", sans-serif;
-  text-align: center; 
+  font-family: 'DM Sans', sans-serif;
+  text-align: center;
   letter-spacing: 1px;
 }
 
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 10px; 
-
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
   padding: 80px 0 0 180px;
 }
 
 .footer-item {
-  text-align: start; 
+  text-align: start;
   color: white;
 }
 
 .footer-heading {
   font-size: 34px;
-  font-family: "Forum", cursive;
+  font-weight: 200;
+  font-family: 'Forum', cursive;
   color: #e6b850;
   padding-bottom: 20px;
 }
 
-li, li a {
+li,
+li a {
   list-style-type: none;
   text-decoration: none;
   font-size: 20px;
   font-family: 'DM Sans', sans-serif;
-    font-weight: 200;
-    letter-spacing:1px;
+  font-weight: 200;
+  letter-spacing: 1px;
   color: white;
   line-height: 1.6;
 }
@@ -829,7 +814,8 @@ li a:hover {
 
 .footer-contact {
   font-size: 34px;
-  font-family: "Forum", cursive;
+  font-weight: 200;
+  font-family: 'Forum', cursive;
   color: #e6b850;
   margin-bottom: 4px;
 }
@@ -844,18 +830,18 @@ li a:hover {
 
 .footer-email {
   font-size: 16px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   letter-spacing: 1px;
-  font-weight:200;
- color: white;
- text-decoration: none;
+  font-weight: 200;
+  color: white;
+  text-decoration: none;
 }
 
 .footer-email:hover {
   color: #e6b850;
 }
 
-.footer-social{
+.footer-social {
   margin-top: 10px;
   font-size: 20px;
   color: #434242;
@@ -871,45 +857,36 @@ li a:hover {
   color: #e6b850;
 }
 
-
 /* Responsive CSS */
 /* Media Queries */
 
-
-
 @media only screen and (min-width: 1600px) {
-
   #landing-page {
-    height: 680px;
+    height: 100vh;
     background-image: url(/desktop2.jpeg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
-   background-position: center;
+    background-position: center;
   }
 
   #landing-page::before {
-    content: ''; 
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 680px;
-    background-color: rgba(0, 0, 0, 0.2); 
-    z-index: 1; 
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
   }
-  
+
   #landing-page > * {
-    position: relative; 
-    z-index: 2; 
+    position: relative;
+    z-index: 2;
   }
 }
 
-
-
 @media only screen and (max-width: 1400px) {
-
-  
-
   // Landing page
 
   #landing-page {
@@ -922,13 +899,15 @@ li a:hover {
     margin: 100px 0 60px 0;
   }
 
-  .services-text, .section-text {
+  .services-text,
+  .section-text {
     font-size: 20px;
     width: 80%;
     margin: 0 0 80px 0;
   }
 
-  #services-left, #section-left {
+  #services-left,
+  #section-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -939,7 +918,8 @@ li a:hover {
     padding: 0;
   }
 
-  #services-right, #section-right {
+  #services-right,
+  #section-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -950,48 +930,47 @@ li a:hover {
     padding: 0;
   }
 
-  #services-left img, #services-right img, #section-left img, #section-right img {
-  height: 300px;
-  width: 300px;
-}
+  #services-left img,
+  #services-right img,
+  #section-left img,
+  #section-right img {
+    height: 300px;
+    width: 300px;
+  }
 
-.work-flex-container img {
-  width: 300px;
-}
+  .work-flex-container img {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-
   .carousel-button {
-      top: 45%;
-    }
-    
-    .carousel-button--left {
-      left: -100px;
-    }
-    
-    
-    .carousel-button--right {
-     right: -100px;
-    }
+    top: 45%;
+  }
+
+  .carousel-button--left {
+    left: -100px;
+  }
+
+  .carousel-button--right {
+    right: -100px;
+  }
 
   .carousel-button img {
     height: 3rem;
     width: auto;
-   }
-  
+  }
 
   .menuItem {
- 
-        &:hover:after {
-            width: 25%; 
-            left: calc((100% - 25%) / 2);
-        }
-      
-        &:not(:hover):after {
-          width: 0; 
-          left: 50%; 
-        }
+    &:hover:after {
+      width: 25%;
+      left: calc((100% - 25%) / 2);
+    }
+
+    &:not(:hover):after {
+      width: 0;
+      left: 50%;
+    }
   }
 
   // About us page
@@ -999,123 +978,107 @@ li a:hover {
     height: auto;
   }
 
-
-  .about-header, .services-header, .page-header {
+  .about-header,
+  .services-header,
+  .page-header {
     font-size: 35px;
   }
-
- 
 
   .about-hr {
     width: 100%;
   }
 
-
   // Main pages
 
-
-
-
   .section-text {
-      font-size: 20px;
-      padding: 0;
+    font-size: 20px;
+    padding: 0;
   }
-
 
   .section-header {
-      font-size: 32px;
+    font-size: 32px;
   }
 
-
-
   .text {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   // Footer
 
   .footer-text {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .footer-container {
-      padding: 100px 0 0 80px;
+    padding: 100px 0 0 80px;
   }
 
   .footer-heading {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   li,
   li a {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .footer-contact {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .footer-number {
-      font-size: 20px;
-      letter-spacing: 1.2px;
+    font-size: 20px;
+    letter-spacing: 1.2px;
   }
 
   .footer-email {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .footer-social {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .footer-social a {
-      font-size: 20px;
+    font-size: 20px;
   }
-
 }
 
 @media only screen and (max-width: 1024px) {
   .carousel-button img {
     height: 2rem;
     width: auto;
-   }
-  
+  }
 
   .menu {
     padding-top: 3rem;
   }
 
-
   .menuItem {
- font-size: 26px;
+    font-size: 26px;
   }
 
   .menuItem:hover {
-
     &:after {
       display: none;
     }
-  
+
     &:not(:hover):after {
-     display: none;
+      display: none;
     }
   }
 }
 
-
 @media only screen and (max-width: 992px) {
-
   .nav-image {
     height: 40px;
   }
-
 
   // Services page
 
   .services-text {
     font-size: 18px;
   }
-
 
   // About us page
 
@@ -1124,76 +1087,67 @@ li a:hover {
     padding: 0 25px;
   }
 
-
   // Main page
 
   .section-text {
-    
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .section-header {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .text {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   #section3 img {
     width: 300px;
-}
-
+  }
 
   // Footer
 
   .footer-text {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .footer-heading {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   li,
   li a {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .footer-contact {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .footer-number {
-      font-size: 18px;
-      letter-spacing: 1px;
+    font-size: 18px;
+    letter-spacing: 1px;
   }
 
   .footer-email {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .footer-social {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .footer-social a {
-      font-size: 18px;
+    font-size: 18px;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
-
-  
-// Services page
-
+  // Services page
 
   .services-text {
     font-size: 16px;
   }
-
-
 
   // About us page
 
@@ -1201,95 +1155,84 @@ li a:hover {
     font-size: 18px;
   }
 
-
   .about-hr {
     width: 100%;
   }
 
- 
- 
-
   // Main page
 
   .section-text {
-      font-size: 16px;
+    font-size: 16px;
   }
-
 
   .section-header {
-      font-size: 24px;
+    font-size: 24px;
   }
 
-
-
   .text {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   // Footer
 
   .footer-text {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .footer-container {
-      grid-template-columns: repeat(2, 1fr);
-      padding: 60px 0 0 50px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px 0 0 50px;
   }
 
   .footer-heading {
-      font-size: 26px;
+    font-size: 26px;
   }
 
   li,
   li a {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .footer-contact {
-      padding-top: 40px;
-      font-size: 26px;
+    padding-top: 40px;
+    font-size: 26px;
   }
 
   .footer-number {
-      font-size: 16px;
-      letter-spacing: 0.8px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
   }
 
   .footer-email {
-      font-size: 10px;
+    font-size: 10px;
   }
 
   .footer-social {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .footer-social a {
-      font-size: 16px;
+    font-size: 16px;
   }
-
 }
 
 @media only screen and (max-width: 576px) {
-
   #landing-page {
     height: 680px;
     background-image: url(/mobile.jpeg);
-    background-size:contain;
-   background-position: center;
-   background-repeat: no-repeat;
-   margin: 0 0 20px 0;
-}
-
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0 20px 0;
+  }
 
   .contact-form {
     min-width: 380px;
   }
-  
+
   #section3 {
     padding: 60px 0;
   }
-
 
   // About us page
 
@@ -1298,41 +1241,36 @@ li a:hover {
   }
 
   .about-us p {
-     padding: 0;
-}
-
+    padding: 0;
+  }
 
   .about-hr {
     width: 100%;
   }
 
-
-
-
   // Main page
 
   .section-text {
     font-size: 16px;
-}
-
-
-
-.section-header {
-    font-size: 24px;
-}
-
-
-
-
-
-  .banner {
-      font-size: 32px;
-      width: 430px;
-      height: 200px;
-      margin-bottom: 90px;
   }
 
-  // Contact page 
+  .section-header {
+    font-size: 24px;
+  }
+
+  .hero-header {
+    font-size: 32px;
+  }
+
+  .banner {
+    font-size: 32px;
+    width: 430px;
+    height: 200px;
+    margin-bottom: 90px;
+    margin-left: 0rem;
+  }
+
+  // Contact page
 
   .contact-text {
     font-size: 18px;
@@ -1341,20 +1279,14 @@ li a:hover {
   // Footer
 
   .footer-text {
-      font-size: 12px;
+    font-size: 12px;
   }
-
 }
-
-
 
 @media only screen and (max-width: 480px) {
-
-.banner {
-  margin-bottom: 90px;
-}
-
-
+  .banner {
+    margin-bottom: 90px;
+  }
 
   .about-hr {
     width: 100%;
@@ -1364,28 +1296,28 @@ li a:hover {
 
   .section-text {
     font-size: 16px;
-}
+  }
 
-.section-header {
+  .section-header,
+  .hero-header {
     font-size: 24px;
-}
+  }
 }
 
 @media screen and (max-width: 390px) {
-
   #landing-page p {
     font-size: 28px;
   }
 
-  .hollow-button, .solid-button {
+  .hollow-button,
+  .solid-button {
     width: 160px;
     font-size: 12px;
   }
-  
+
   .banner {
     font-size: 32px;
     width: 390px;
     height: 180px;
+  }
 }
-}
-

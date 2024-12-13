@@ -54,12 +54,12 @@ function Footer() {
         </div>
         <div className="footer-item">
           <h2 className="footer-contact">Contact us</h2>
-          <h3 className="footer-number">027 207 1306</h3>
+          <h3 className="footer-number">021 0288 0229</h3>
           <a
             className="footer-email"
             href="mailto:jayden@pedersenpainting.co.nz"
           >
-            jayden@pedersenpainting.co.nz
+            admin@pedersenpainting.co.nz
           </a>
           <p className="footer-social">
             Connect on &nbsp;{' '}

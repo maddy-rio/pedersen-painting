@@ -31,30 +31,16 @@ function AboutUs() {
         <section className="about-us">
           <div>
             <p>
-              Pedersen Painting & Decorating is your top choice for exceptional
-              painting services in Hawke&apos;s Bay. With over a decade of
-              experience, we&apos;ve built a reputation for quality
-              craftsmanship and excellence.
-            </p>
-            <br />
-            <p>
-              Our team is led by Tony and Jayden, a father-and-son duo, and
-              includes two additional skilled painters. We focus on premium end
-              homes and use only the best products to ensure superior results.
-            </p>
-            <br />
+            At NextLevel Painting, quality is at the heart of everything we do. We understand that a fresh coat of paint can enhance the beauty and value of your property, which is why we exclusively use Prospec, a high-quality paint system renowned for its durability and innovative technology. As a certified Prospec applicator, our skilled team of five painters is expertly trained in the latest application techniques, ensuring that every project—residential or commercial—receives a flawless finish that stands the test of time.
 
-            <p>
-              Whether it&apos;s painting your home or enhancing your business,
-              we handle every project with care and precision. Our comprehensive
-              services, from wallpapering to water blasting, cater to all your
-              painting needs.
+
             </p>
+        
             <br />
             <p>
-              Ready to elevate your space with Pedersen Painting & Decorating?
-              Explore our services below and discover why we&apos;re the trusted
-              name in painting excellence throughout Hawke&apos;s Bay.
+            Our commitment to excellence means that we pay meticulous attention to detail, from surface preparation to the final coat. By leveraging Prospec’s superior products and our team's expertise, we deliver stunning results that not only elevate your space but also provide lasting performance. As we continue to grow and establish ourselves in the community, we invite you to explore our services and discover why NextLevel Painting is the trusted choice for quality painting solutions. 
+
+
             </p>
             <br />
           </div>

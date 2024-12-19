@@ -57,9 +57,9 @@ function Footer() {
           <h3 className="footer-number">021 0288 0229</h3>
           <a
             className="footer-email"
-            href="mailto:jayden@pedersenpainting.co.nz"
+            href="mailto:admin@nextlevelpainting.co.nz"
           >
-            admin@pedersenpainting.co.nz
+            admin@nextlevelpainting.co.nz
           </a>
           <p className="footer-social">
             Connect on &nbsp;{' '}
@@ -84,7 +84,7 @@ function Footer() {
       </div>
       <div className="footer-overlay"></div>
       <div className="footer-text">
-        © 2024 Pedersen Painting & Decorating LTD{' '}
+        © 2024 NextLevel Painting Limited{' '}
       </div>
     </motion.section>
   )

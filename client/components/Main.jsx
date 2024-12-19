@@ -114,19 +114,14 @@ function Main() {
           }}
         >
           <h1 className="hero-header">
-            Crafting Premium Living, One Brushstroke at a Time.
+            Superior paint. Superior painters. NextLevel results.
           </h1>
-          <button
-            className="hollow-button"
-            onClick={() => (window.location.href = '/work')}
-          >
-            View our work
-          </button>
+      
           <button
             className="solid-button"
             onClick={() => (window.location.href = '/contact')}
           >
-            Contact us
+            Contact us for a quote
           </button>
         </motion.div>
       </motion.section>
@@ -162,9 +157,9 @@ function Main() {
             }
           }}
         >
-          <h1 className="section-header">WHO WE ARE</h1>
+          <h1 className="section-header">Who we are</h1>
           <p>
-            Welcome to Pedersen Painting & Decorating, your trusted choice for
+            Welcome NextLevel Painting, your trusted choice for
             superior painting solutions in Hawke&apos;s Bay. As a family-run
             business, we take pride in delivering exceptional results tailored
             to your vision. With a focus on residential new builds and
@@ -211,7 +206,7 @@ function Main() {
             }
           }}
         >
-          <h1 className="section-header">OUR SERVICES</h1>
+          <h1 className="section-header">Our Services</h1>
           <p>
             Elevate your space with our premium services. From residential to
             commercial painting, we specialize in precision and professionalism.

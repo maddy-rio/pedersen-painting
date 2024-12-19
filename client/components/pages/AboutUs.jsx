@@ -31,7 +31,7 @@ function AboutUs() {
         <section className="about-us">
           <div>
             <p>
-            At NextLevel Painting, quality is at the heart of everything we do. We understand that a fresh coat of paint can enhance the beauty and value of your property, which is why we exclusively use Prospec, a high-quality paint system renowned for its durability and innovative technology. As a certified Prospec applicator, our skilled team of five painters is expertly trained in the latest application techniques, ensuring that every project—residential or commercial—receives a flawless finish that stands the test of time.
+            At NextLevel Painting, quality is at the heart of everything we do. We understand that a fresh coat of paint can enhance the beauty and value of your property, which is why we exclusively use the best quality products from our partnered supplier, Complete Paints. For our repaint and refresh services, we utilize the eco-friendly Paint Plus product range, which features minimal odor and emissions and is proudly made in New Zealand. When it comes to new builds, we take pride in using Prospec Paints, one of the highest-quality paint systems available. Prospec’s approved applicator-only coating system is built around unrivaled highbuild technology, offering the industry’s only true Level 5 wall and ceiling finish, paired with their self-leveling enamel.
 
 
             </p>

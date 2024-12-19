@@ -38,7 +38,7 @@ function AboutUs() {
         
             <br />
             <p>
-            Our commitment to excellence means that we pay meticulous attention to detail, from surface preparation to the final coat. By leveraging Prospec’s superior products and our team's expertise, we deliver stunning results that not only elevate your space but also provide lasting performance. As we continue to grow and establish ourselves in the community, we invite you to explore our services and discover why NextLevel Painting is the trusted choice for quality painting solutions. 
+            Our commitment to excellence means that we pay meticulous attention to detail, from surface preparation to the final coat. By leveraging superior products and our team's expertise, we deliver stunning results that not only elevate your space but also provide lasting performance. As we continue to grow and establish ourselves in the community, we invite you to explore our services and discover why NextLevel Painting is the trusted choice for quality painting solutions. 
 
 
             </p>

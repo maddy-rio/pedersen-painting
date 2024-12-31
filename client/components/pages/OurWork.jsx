@@ -6,6 +6,9 @@ import Carousel3 from './Carousels.jsx/Carousel3'
 import Carousel4 from './Carousels.jsx/Carousel4'
 import Carousel5 from './Carousels.jsx/Carousel5'
 import Carousel6 from './Carousels.jsx/Carousel6'
+import Carousel7 from './Carousels.jsx/Carousel7'
+import Carousel8 from './Carousels.jsx/Carousel8'
+import Carousel9 from './Carousels.jsx/Carousel9'
 
 import { motion, animate, stagger, useInView } from 'framer-motion'
 import { useState, useEffect, useRef } from 'react'
@@ -77,6 +80,7 @@ function OurWork() {
         </motion.div>
         <section id="work-page" ref={images}>
           <section id="work-section">
+        
             <div className="work-flex-container">
               <div className="work-flex-item animate-project-image">
                 <div
@@ -84,16 +88,16 @@ function OurWork() {
                   onClick={() => toggleModal(<Carousel />)}
                   role="button"
                   tabIndex={0}
-                  aria-label="Image carousel for Haumoana house"
+                  aria-label="Image carousel for Matangi house"
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ')
                       toggleModal(<Carousel />)
                   }}
                 >
-                  <img src="/Haumoana.jpeg" alt="House in Haumoana" />
+                  <img src="/Matangi.jpeg" alt="House in Matangi" />
                   <div className="static-overlay"></div>
                   <div className="overlay"></div>
-                  <div className="text">Haumoana</div>
+                  <div className="text">Matangi</div>
                 </div>
               </div>
               <div className="work-flex-item animate-project-image">
@@ -102,16 +106,16 @@ function OurWork() {
                   onClick={() => toggleModal(<Carousel2 />)}
                   role="button"
                   tabIndex={0}
-                  aria-label="Image carousel for Eden Lane house"
+                  aria-label="Image carousel for Gage Lane house"
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ')
                       toggleModal(<Carousel2 />)
                   }}
                 >
-                  <img src="/Edenlane.jpeg" alt="House on Eden Lane" />
+                  <img src="/Gage.jpeg" alt="House on Gage Lane" />
                   <div className="static-overlay"></div>
                   <div className="overlay"></div>
-                  <div className="text">Eden Lane</div>
+                  <div className="text">Gage Lane</div>
                 </div>
               </div>
               <div className="work-flex-item animate-project-image">
@@ -120,16 +124,16 @@ function OurWork() {
                   onClick={() => toggleModal(<Carousel3 />)}
                   role="button"
                   tabIndex={0}
-                  aria-label="Image carousel for Waimārama house"
+                  aria-label="Image carousel for Puketapu house"
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ')
                       toggleModal(<Carousel3 />)
                   }}
                 >
-                  <img src="/Waimarama.jpeg" alt="House in Waimārama" />
+                  <img src="/Puketapu.jpeg" alt="House in Puketapu" />
                   <div className="static-overlay"></div>
                   <div className="overlay"></div>
-                  <div className="text">Waimārama</div>
+                  <div className="text">Puketapu</div>
                 </div>
               </div>
               <div className="work-flex-item animate-project-image">
@@ -138,16 +142,16 @@ function OurWork() {
                   onClick={() => toggleModal(<Carousel4 />)}
                   role="button"
                   tabIndex={0}
-                  aria-label="Image carousel for Taihape house"
+                  aria-label="Image carousel for The Brow House"
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ')
                       toggleModal(<Carousel4 />)
                   }}
                 >
-                  <img src="/Taihape.jpeg" alt="House in Taihape" />
+                  <img src="/Thebrow.jpeg" alt="House on The Brow" />
                   <div className="static-overlay"></div>
                   <div className="overlay"></div>
-                  <div className="text">Taihape</div>
+                  <div className="text">The Brow</div>
                 </div>
               </div>
               <div className="work-flex-item animate-project-image">
@@ -156,16 +160,16 @@ function OurWork() {
                   onClick={() => toggleModal(<Carousel5 />)}
                   role="button"
                   tabIndex={0}
-                  aria-label="Image carousel for interior homes"
+                  aria-label="Image carousel for Churchill house"
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ')
                       toggleModal(<Carousel5 />)
                   }}
                 >
-                  <img src="/Interiors.jpeg" alt="Interior pictures" />
+                  <img src="/Churchill.jpeg" alt="House in Churchill" />
                   <div className="static-overlay"></div>
                   <div className="overlay"></div>
-                  <div className="text">Interiors</div>
+                  <div className="text">Churchill</div>
                 </div>
               </div>
               <div className="work-flex-item animate-project-image">
@@ -174,19 +178,75 @@ function OurWork() {
                   onClick={() => toggleModal(<Carousel6 />)}
                   role="button"
                   tabIndex={0}
-                  aria-label="Image carousel for exterior homes"
+                  aria-label="Image carousel for Waimārama house"
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ')
                       toggleModal(<Carousel6 />)
                   }}
                 >
-                  <img src="/Exteriors.jpeg" alt="Exterior pictures" />
+                  <img src="/Landmark.jpeg" alt="LandMark Office" />
                   <div className="static-overlay"></div>
                   <div className="overlay"></div>
-                  <div className="text">Exteriors</div>
+                  <div className="text">LandMark</div>
                 </div>
               </div>
+              <div className="work-flex-item animate-project-image">
+                <div
+                  className="image-container"
+                  onClick={() => toggleModal(<Carousel7 />)}
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Image carousel for LandMark Office"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ')
+                      toggleModal(<Carousel7 />)
+                  }}
+                >
+                  <img src="/Waimarama.jpeg" alt="House in Waimarama" />
+                  <div className="static-overlay"></div>
+                  <div className="overlay"></div>
+                  <div className="text">Waimārama</div>
+                </div>
+              </div>
+              <div className="work-flex-item animate-project-image">
+                <div
+                  className="image-container"
+                  onClick={() => toggleModal(<Carousel8 />)}
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Image carousel for Taihape house"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ')
+                      toggleModal(<Carousel8 />)
+                  }}
+                >
+                  <img src="/Taihape.jpeg" alt="Taihape house" />
+                  <div className="static-overlay"></div>
+                  <div className="overlay"></div>
+                  <div className="text">Taihape</div>
+                </div>
+              </div>
+              <div className="work-flex-item animate-project-image">
+                <div
+                  className="image-container"
+                  onClick={() => toggleModal(<Carousel9 />)}
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Image carousel for Eden Lane house"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ')
+                      toggleModal(<Carousel9 />)
+                  }}
+                >
+                  <img src="/Edenlane.jpeg" alt="Eden Lane house" />
+                  <div className="static-overlay"></div>
+                  <div className="overlay"></div>
+                  <div className="text">Eden Lane</div>
+                </div>
+              </div>
+              
             </div>
+            
           </section>
         </section>
         <Footer />

@@ -55,17 +55,39 @@ function Carousel() {
             <button class="carousel-button carousel-button--left "><img src="/left-chevron.svg" alt="left chevron"/></button>
            <div class="carousel-container">
 <ul class="carousel-list">
-    <li class="carousel-slide current-slide"><img class="carousel-image" src="/haumoana/1.jpg" alt="Haumoana exterior"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/haumoana/2.jpg" alt="Exterior"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/haumoana/3.jpg" alt="Kitchen"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/haumoana/4.jpg" alt="Dining room"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/haumoana/5.jpg" alt="Living room"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/haumoana/6.jpg" alt="Hobbies room"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/haumoana/7.jpg" alt="Hallway"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/haumoana/8.jpg" alt="Bedroom"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/haumoana/9.jpg" alt="Bathroom"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/haumoana/10.jpg" alt="Bedroom"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/haumoana/11.jpg" alt="Entrance area"/></li>
+    <li class="carousel-slide current-slide"><img class="carousel-image" src="/matangi/1.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/2.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/3.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/4.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/5.jpg" alt="Matangi"/></li>  
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/6.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/7.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/8.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/9.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/10.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/11.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/12.jpg" alt="Matangi"/></li> 
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/13.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/14.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/15.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/16.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/17.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/18.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/19.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/20.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/21.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/22.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/23.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/24.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/25.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/26.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/27.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/28.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/29.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/30.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/31.jpg" alt="Matangi"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/matangi/32.jpg" alt="Matangi"/></li>
+
 </ul>
 
            </div>

@@ -55,10 +55,24 @@ function Carousel5() {
             <button class="carousel-button carousel-button--left "><img src="/left-chevron.svg" alt="left chevron"/></button>
            <div class="carousel-container">
 <ul class="carousel-list">
-    <li class="carousel-slide current-slide"><img class="carousel-image" src="/interiors/1.jpg" alt="Before paint"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/interiors/2.jpg" alt="After paint"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/interiors/3.jpg" alt="Gold wallpapered bathroom"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/interiors/4.jpg" alt="Hallway"/></li>
+<li class="carousel-slide current-slide"><img class="carousel-image" src="/churchill/1.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/2.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/3.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/4.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/5.png" alt="Churchill"/></li>  
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/6.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/7.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/8.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/9.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/10.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/11.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/12.png" alt="Churchill"/></li> 
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/13.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/14.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/15.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/16.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/17.png" alt="Churchill"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/churchill/18.png" alt="Churchill"/></li>
 </ul>
 
            </div>

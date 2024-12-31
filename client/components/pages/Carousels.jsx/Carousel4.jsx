@@ -55,18 +55,28 @@ function Carousel4() {
             <button class="carousel-button carousel-button--left "><img src="/left-chevron.svg" alt="left chevron"/></button>
            <div class="carousel-container">
 <ul class="carousel-list">
-    <li class="carousel-slide current-slide"><img class="carousel-image" src="/taihape/1.jpg" alt="House in Taihape exterior"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/taihape/2.jpg" alt="Dining room"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/taihape/3.jpg" alt="Dining and kitchen"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/taihape/4.jpg" alt="Kitchen"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/taihape/5.jpg" alt="Living room"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/taihape/6.jpg" alt="Kitchen and living"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/taihape/7.jpg" alt="Living room 2"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/taihape/8.jpg" alt="Bedroom"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/taihape/9.jpg" alt="Bedroom"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/taihape/10.jpg" alt="Bathroom"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/taihape/11.jpg" alt="Master entrance"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/taihape/12.jpg" alt="Bathroom 2"/></li>
+<li class="carousel-slide current-slide"><img class="carousel-image" src="/thebrow/1.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/2.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/3.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/4.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/5.jpg" alt="The Brow"/></li>  
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/6.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/7.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/8.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/9.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/10.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/11.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/12.jpg" alt="The Brow"/></li> 
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/13.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/14.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/15.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/16.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/17.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/18.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/19.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/20.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/21.jpg" alt="The Brow"/></li>
+    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/22.jpg" alt="The Brow"/></li>
 </ul>
 
            </div>

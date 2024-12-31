@@ -1,6 +1,6 @@
-import Carousel4 from './pages/Carousels.jsx/Carousel4'
-import Carousel3 from './pages/Carousels.jsx/Carousel3'
+import Carousel from './pages/Carousels.jsx/Carousel'
 import Carousel2 from './pages/Carousels.jsx/Carousel2'
+import Carousel3 from './pages/Carousels.jsx/Carousel3'
 
 import { motion, animate, stagger, useInView } from 'framer-motion'
 import { useState, useEffect, useRef } from 'react'
@@ -141,8 +141,8 @@ function Main() {
         >
           <img
             // className="main-image"
-            src="/waimarama1.jpeg"
-            alt="House in Waimarama's hallway"
+            src="/matangi1.jpeg"
+            alt="Matangi kitchen"
           ></img>
         </motion.div>
         <motion.div
@@ -190,8 +190,8 @@ function Main() {
         >
           <img
             // className="main-image"
-            src="/waimarama2.jpeg"
-            alt="House in Waimarama's bathroom"
+            src="/matangi2.jpeg"
+            alt="Matangi dining room"
           ></img>
         </motion.div>
         <motion.div
@@ -229,38 +229,19 @@ function Main() {
           <div className="flex-item animate-project-image">
             <div
               className="image-container"
-              onClick={() => toggleModal(<Carousel4 />)}
+              onClick={() => toggleModal(<Carousel />)}
               role="button"
               tabIndex={0}
-              aria-label="Image carousel for Taihape house"
+              aria-label="Image carousel for Matangi house"
               onKeyDown={(e) => {
                 if (e.key === 'Enter' || e.key === ' ')
-                  toggleModal(<Carousel4 />)
+                  toggleModal(<Carousel />)
               }}
             >
-              <img src="/Taihape.jpeg" alt="House in Taihape" />
+              <img src="/Matangi.jpeg" alt="House in Matangi" />
               <div className="static-overlay"></div>
               <div className="overlay"></div>
-              <div className="text">Taihape</div>
-            </div>
-          </div>
-
-          <div className="flex-item animate-project-image">
-            <div
-              className="image-container"
-              onClick={() => toggleModal(<Carousel3 />)}
-              role="button"
-              tabIndex={0}
-              aria-label="Image carousel for Waimarama house"
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ')
-                  toggleModal(<Carousel3 />)
-              }}
-            >
-              <img src="/Waimarama.jpeg" alt="House in Waimarama" />
-              <div className="static-overlay"></div>
-              <div className="overlay"></div>
-              <div className="text">Waimārama</div>
+              <div className="text">Matangi</div>
             </div>
           </div>
 
@@ -270,16 +251,35 @@ function Main() {
               onClick={() => toggleModal(<Carousel2 />)}
               role="button"
               tabIndex={0}
-              aria-label="Image carousel for Eden Lane house"
+              aria-label="Image carousel for Gage Lane house"
               onKeyDown={(e) => {
                 if (e.key === 'Enter' || e.key === ' ')
                   toggleModal(<Carousel2 />)
               }}
             >
-              <img src="/Edenlane.jpeg" alt="House on Eden Lane" />
+              <img src="/Gage.jpeg" alt="House in Gage Lane" />
               <div className="static-overlay"></div>
               <div className="overlay"></div>
-              <div className="text">Eden Lane</div>
+              <div className="text">Gage Lane</div>
+            </div>
+          </div>
+
+          <div className="flex-item animate-project-image">
+            <div
+              className="image-container"
+              onClick={() => toggleModal(<Carousel3 />)}
+              role="button"
+              tabIndex={0}
+              aria-label="Image carousel for Puketapu house"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ')
+                  toggleModal(<Carousel3 />)
+              }}
+            >
+              <img src="/Puketapu.jpeg" alt="House in Puketapu" />
+              <div className="static-overlay"></div>
+              <div className="overlay"></div>
+              <div className="text">Puketapu</div>
             </div>
           </div>
         </div>

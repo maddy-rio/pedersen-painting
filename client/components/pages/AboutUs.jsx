@@ -73,9 +73,21 @@ function AboutUs() {
               <div className="image-container">
                 <div className="about-overlay"></div>
                 <img
-                  src="/wallpaper.jpeg"
-                  alt="Wallpaper with gold and black"
+                  src="/repaint.jpeg"
+                  alt="Churchill repaint"
                 />
+                <a href="/services">
+                  <div
+                    className="overlay"
+                    aria-label="Repainting services"
+                  ></div>
+                </a>
+                <div className="about-text">Repaints</div>
+              </div>
+
+              <div className="image-container">
+                <div className="about-overlay"></div>
+                <img src="/wallpaper.jpeg" alt="Wallpaper" />
                 <a href="/services">
                   <div
                     className="overlay"
@@ -83,18 +95,6 @@ function AboutUs() {
                   ></div>
                 </a>
                 <div className="about-text">Wallpapering</div>
-              </div>
-
-              <div className="image-container">
-                <div className="about-overlay"></div>
-                <img src="/waterblasting.jpeg" alt="Waterblasting house" />
-                <a href="/services">
-                  <div
-                    className="overlay"
-                    aria-label="Waterblasting services"
-                  ></div>
-                </a>
-                <div className="about-text">Waterblasting</div>
               </div>
             </div>
           </div>

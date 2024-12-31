@@ -84,9 +84,9 @@ function Services() {
           }
         }}
       >
-        <h1 className="services-header">&nbsp;&nbsp;Services&nbsp;&nbsp;</h1>
+        <h1 className="services-header">&nbsp;&nbsp;Our services&nbsp;&nbsp;</h1>
 
-        {/* Residential */}
+        {/* Residential New Builds */}
         <section id="services-left" aria-labelledby="residential-heading">
           <a href="/work">
             <img
@@ -108,20 +108,15 @@ function Services() {
             }}
           >
             <h1 className="section-header" id="residential-heading">
-              Residential
+              Residential New Builds
             </h1>
             <p>
-              Pedersen Painting consults with clients to understand their vision
-              and preferences. Surfaces are prepared by cleaning, sanding, and
-              priming. Quality paint products are applied using precise
-              techniques to achieve a flawless finish. Attention is given to
-              detail work, such as trim and doors. Once painting is complete,
-              surfaces are cleaned for a pristine result.
+            At our company, we are committed to delivering exceptional quality in every new build project. We proudly use Prospec Paints, known for their superior performance and durability. Our skilled team is trained in the application of Prospec’s exclusive approved applicator-only coating system, which features advanced high-build technology. This ensures a flawless Level 5 finish on walls and ceilings, paired with a self-leveling enamel that enhances the beauty of your new home. We focus on every detail to ensure that your new build looks stunning and meets your expectations.
             </p>
           </motion.div>
         </section>
 
-        {/* Commercial */}
+        {/* Commercial Painting */}
         <section id="services-right" aria-labelledby="commercial-heading">
           <motion.div
             variants={commercialImageVariant}
@@ -155,20 +150,15 @@ function Services() {
             }}
           >
             <h1 className="section-header" id="commercial-heading">
-              Commercial
+              Commercial Painting
             </h1>
             <p>
-              For commercial projects, Pedersen Painting assesses the space and
-              plans the painting process accordingly. Surfaces are prepared
-              thoroughly to ensure optimal paint adhesion and durability.
-              Durable paint products are applied to meet the specific needs of
-              commercial environments. Quality checks are conducted throughout
-              to ensure client satisfaction.
+            Our commercial painting services are designed to enhance the look and feel of your business environment. Whether you need a fresh coat for offices, retail shops, or educational institutions, we deliver professional results that reflect your brand’s identity. Our experienced team uses high-quality paints and techniques to ensure durability and a polished finish, creating a welcoming atmosphere for employees and customers alike.
             </p>
           </motion.div>
         </section>
 
-        {/* Wallpapering */}
+        {/* Interior/Exterior Repaints */}
         <section id="services-left" aria-labelledby="wallpapering-heading">
           <motion.div
             variants={wallpaperImageVariant}
@@ -202,19 +192,17 @@ function Services() {
             }}
           >
             <h1 className="section-header" id="wallpapering-heading">
-              Wallpapering
+              Interior/Exterior Repaints
             </h1>
             <p>
-              Clients collaborate with Pedersen Painting to select the perfect
-              wallpaper design. Walls are cleaned, smoothed, and primed for
-              installation. Our experienced wallpaperer will carefully apply the
-              wallpaper, ensuring perfect alignment and smooth seams. Finishing
-              touches are completed for a professional result.
+            Breathe new life into your home with our interior and exterior repainting services. We use Paintplus from our trusted supplier, Complete Paints, to provide a vibrant and long-lasting finish. Whether you want to refresh a single room or give your entire home a makeover, our skilled team will work with you to choose the perfect colors and finishes that elevate your space and enhance its overall appeal.
+
+
             </p>
           </motion.div>
         </section>
 
-        {/* Waterblasting */}
+        {/* Roof Painting */}
         <section id="services-right" aria-labelledby="waterblasting-heading">
           <motion.div
             variants={waterblastingImageVariant}
@@ -246,14 +234,53 @@ function Services() {
             }}
           >
             <h1 className="section-header" id="waterblasting-heading">
-              Waterblasting
+              Roof Painting
             </h1>
             <p>
-              Before painting exterior surfaces, Pedersen Painting uses
-              waterblasting to clean and prepare the area. This process removes
-              dirt, grime, and old paint layers, creating an ideal surface for
-              paint adhesion. Environmental considerations are taken into
-              account throughout the process.
+            Is your roof looking tired and worn? Our roof painting service can restore its original beauty and protect it from the elements. We use high-quality, weather-resistant paints that not only improve the appearance of your roof but also extend its lifespan. Our team is experienced in safely and effectively painting roofs, ensuring a clean and professional finish that will have your home looking like new again.
+            </p>
+          </motion.div>
+        </section>
+        {/* Wallpapering */}
+        <section id="services-left" aria-labelledby="wallpapering-heading">
+          <motion.div
+            variants={wallpaperImageVariant}
+            initial="hidden"
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.35 }}
+            animate={hasWallpaperImageAnimated ? 'visible' : 'hidden'}
+            onViewportEnter={() => {
+              if (!hasWallpaperImageAnimated) {
+                setHasWallpaperImageAnimated(true)
+              }
+            }}
+          >
+            <a href="/work">
+              <img
+                className="services-image"
+                src="/services5.jpeg"
+                alt="House in Matangi's bathroom"
+              />
+            </a>
+          </motion.div>
+          <motion.div
+            className="services-text"
+            variants={wallpaperTextVariant}
+            initial="hidden"
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.35 }}
+            animate={hasWallpaperTextAnimated ? 'visible' : 'hidden'}
+            onViewportEnter={() => {
+              if (!hasWallpaperTextAnimated) {
+                setHasWallpaperTextAnimated(true)
+              }
+            }}
+          >
+            <h1 className="section-header" id="wallpapering-heading">
+              Wallpapering
+            </h1>
+            <p>
+            Transform your space with our expert wallpapering services. Our skilled wallpaperer takes great care in ensuring that each piece is applied flawlessly, resulting in a beautiful and seamless finish. We offer a wide range of wallpaper options to suit your style, and our attention to detail guarantees that your walls will look stunning and professionally done. Whether it’s a single accent wall or an entire room, we’re here to help you achieve the perfect look.
+
+
             </p>
           </motion.div>
         </section>

@@ -57,7 +57,6 @@ function Carousel4() {
 <ul class="carousel-list">
 <li class="carousel-slide current-slide"><img class="carousel-image" src="/thebrow/1.jpg" alt="The Brow"/></li>
     <li class="carousel-slide"><img class="carousel-image" src="/thebrow/2.jpg" alt="The Brow"/></li>
-    <li class="carousel-slide"><img class="carousel-image" src="/thebrow/3.jpg" alt="The Brow"/></li>
     <li class="carousel-slide"><img class="carousel-image" src="/thebrow/4.jpg" alt="The Brow"/></li>
     <li class="carousel-slide"><img class="carousel-image" src="/thebrow/5.jpg" alt="The Brow"/></li>  
     <li class="carousel-slide"><img class="carousel-image" src="/thebrow/6.jpg" alt="The Brow"/></li>

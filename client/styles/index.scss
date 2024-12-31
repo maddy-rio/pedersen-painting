@@ -884,6 +884,7 @@ li a:hover {
 @media only screen and (max-width: 1400px) {
   // Landing page
 
+
   #landing-page {
     padding: 0;
   }
@@ -1065,6 +1066,8 @@ li a:hover {
 }
 
 @media only screen and (max-width: 992px) {
+
+
   .nav-image {
     height: 60px;
   }
@@ -1138,6 +1141,7 @@ li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+
   // Services page
 
   .services-text {
@@ -1212,6 +1216,13 @@ li a:hover {
 }
 
 @media only screen and (max-width: 576px) {
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 30px;
+    position: fixed;
+}
   #landing-page {
     height: 680px;
     background-image: url(/mobile.jpeg);

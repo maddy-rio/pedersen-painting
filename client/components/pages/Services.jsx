@@ -278,7 +278,7 @@ function Services() {
               Wallpapering
             </h1>
             <p>
-            Transform your space with our expert wallpapering services. Our skilled wallpaperer takes great care in ensuring that each piece is applied flawlessly, resulting in a beautiful and seamless finish. We offer a wide range of wallpaper options to suit your style, and our attention to detail guarantees that your walls will look stunning and professionally done. Whether it’s a single accent wall or an entire room, we’re here to help you achieve the perfect look.
+            Transform your space with our expert wallpapering services. Our skilled wallpaperer takes great care in ensuring that each piece is applied flawlessly, resulting in a beautiful and seamless finish. Our attention to detail guarantees that your walls will look stunning and professionally done, whether it’s a single accent wall or an entire room, we’re here to help you achieve the perfect look.
 
 
             </p>

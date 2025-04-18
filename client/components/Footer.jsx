@@ -72,7 +72,7 @@ function Footer() {
               <FaFacebook />
             </a>{' '}
             <a
-              href="https://www.instagram.com/pedersenpaintinganddecorating?igsh=b2NqbTIyOTljdm0="
+              href="https://www.instagram.com/nextlevel.painting/"
               target="_blank"
               rel="noreferrer"
               aria-label="Connect on Instagram"
